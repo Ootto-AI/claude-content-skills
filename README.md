@@ -13,10 +13,11 @@
 
 ## What this is
 
-Five Claude "skills" for the content side of growing a business — the repeatable pipeline that turns one idea (or one long video) into a week of reels. Each is a structured prompt that does one job. No code, no editing suite.
+Six Claude "skills." One gives Claude a **permanent memory**; the other five turn that memory into a week of reels. Each is a structured prompt that does one job — no code, no editing suite.
 
 | Skill | What it does |
 |-------|--------------|
+| [AI Brain](skills/ai-brain/SKILL.md) | **Gives Claude permanent memory.** Say "wrap up" and it saves the session to a NotebookLM notebook; next session it recalls only what's relevant. The foundation the others run on. |
 | [Viral Hook Writer](skills/viral-hook-writer/SKILL.md) | 10 scroll-stopping hooks for the first 1-3 seconds, ranked for what to test first. |
 | [Reel Scripter](skills/reel-scripter/SKILL.md) | Turns an idea or hook into a tight 30-45s script with spoken lines + on-screen text. |
 | [Content Repurposer](skills/content-repurposer/SKILL.md) | Turns one blog post / podcast / video into 5+ reel ideas and outlines. |
@@ -37,9 +38,11 @@ One command connects it in Claude Code:
 claude mcp add notebooklm -- npx notebooklm-mcp@latest
 ```
 
-Then restart Claude Code, run the `setup_auth` tool to log in to Google once, and `add_notebook` your "Content Memory" notebook.
+Then restart Claude Code, run the `setup_auth` tool to log in to Google once, and `add_notebook` your notebook.
 
-**The full step-by-step (building the memory notebook + the weekly factory workflow) is here: [ootto.ai/blog →](https://www.ootto.ai/blog)**
+The **[AI Brain](skills/ai-brain/SKILL.md)** skill automates the loop: say *"wrap up"* and Claude writes a tight summary of the session into your notebook; next session it recalls only the relevant bits via semantic search — so Claude never starts from zero and you stop re-pasting the same context.
+
+**The full step-by-step (give Claude a permanent memory, then run the content factory on it) is here: [ootto.ai/blog →](https://www.ootto.ai/blog)**
 
 > ⚠️ `notebooklm-mcp` is a community tool that drives NotebookLM via browser automation (a one-time Google login). It's not an official Google/Anthropic integration — great for personal use; mind NotebookLM's terms.
 
