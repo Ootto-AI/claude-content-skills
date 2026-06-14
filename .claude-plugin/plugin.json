@@ -1,0 +1,25 @@
+{
+  "name": "claude-content-skills",
+  "version": "1.0.0",
+  "description": "5 free, copy-paste Claude skills that run your content growth factory — turn ideas and your NotebookLM memory into scroll-stopping Instagram reels: hooks, scripts, repurposing, captions, and a posting calendar. By Ootto.",
+  "author": {
+    "name": "Ootto",
+    "url": "https://www.ootto.ai"
+  },
+  "license": "MIT",
+  "homepage": "https://www.ootto.ai",
+  "repository": "https://github.com/Ootto-AI/claude-content-skills",
+  "category": "marketing",
+  "keywords": [
+    "content-marketing",
+    "instagram-reels",
+    "short-form-video",
+    "viral-content",
+    "hooks",
+    "content-repurposing",
+    "notebooklm",
+    "claude-skills",
+    "small-business",
+    "ootto"
+  ]
+}

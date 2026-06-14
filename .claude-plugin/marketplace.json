@@ -1,0 +1,36 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ootto-content-skills",
+  "owner": {
+    "name": "Ootto",
+    "url": "https://www.ootto.ai"
+  },
+  "metadata": {
+    "description": "Free Claude skills for content growth — turn your ideas and your NotebookLM memory into scroll-stopping Instagram reels: hooks, scripts, repurposing, captions, and a posting calendar. By Ootto, the AI autopilot for small business."
+  },
+  "plugins": [
+    {
+      "name": "claude-content-skills",
+      "source": "./",
+      "description": "5 free, copy-paste Claude skills that run your content growth factory: Viral Hook Writer, Reel Scripter, Content Repurposer, Caption & Hashtags, and Content Calendar.",
+      "author": {
+        "name": "Ootto",
+        "url": "https://www.ootto.ai"
+      },
+      "category": "marketing",
+      "homepage": "https://www.ootto.ai",
+      "keywords": [
+        "content-marketing",
+        "instagram-reels",
+        "short-form-video",
+        "viral-content",
+        "hooks",
+        "content-repurposing",
+        "notebooklm",
+        "claude-skills",
+        "small-business",
+        "ootto"
+      ]
+    }
+  ]
+}
