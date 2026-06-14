@@ -27,11 +27,19 @@ Five Claude "skills" for the content side of growing a business — the repeatab
 
 Generic AI content sounds generic. The fix is **memory** — give Claude what's already worked for *you*.
 
-Connect **Google NotebookLM** to Claude with the open-source [`notebooklm-mcp`](https://www.npmjs.com/package/notebooklm-mcp) server, fill a notebook with your past winning reels, transcripts, brand voice, and a competitor swipe file — and every skill above generates from **your** proven patterns instead of a blank slate.
+Connect **Google NotebookLM** to Claude with the open-source [`notebooklm-mcp`](https://github.com/PleasePrompto/notebooklm-mcp) server, fill a notebook with your past winning reels, transcripts, brand voice, and a competitor swipe file — and every skill above generates from **your** proven patterns instead of a blank slate.
 
 ![The content growth factory](assets/workflow.png)
 
-**The full step-by-step (NotebookLM → Claude via MCP, then the factory workflow) is here: [ootto.ai/blog →](https://www.ootto.ai/blog)**
+One command connects it in Claude Code:
+
+```
+claude mcp add notebooklm -- npx notebooklm-mcp@latest
+```
+
+Then restart Claude Code, run the `setup_auth` tool to log in to Google once, and `add_notebook` your "Content Memory" notebook.
+
+**The full step-by-step (building the memory notebook + the weekly factory workflow) is here: [ootto.ai/blog →](https://www.ootto.ai/blog)**
 
 > ⚠️ `notebooklm-mcp` is a community tool that drives NotebookLM via browser automation (a one-time Google login). It's not an official Google/Anthropic integration — great for personal use; mind NotebookLM's terms.
 
