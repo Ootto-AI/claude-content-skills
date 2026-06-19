@@ -13,16 +13,18 @@
 
 ## What this is
 
-Six Claude "skills." One gives Claude a **permanent memory**; the other five turn that memory into a week of reels. Each is a structured prompt that does one job — no code, no editing suite.
+Eight Claude "skills" that work like a whole content team in one install. The workflow: **feed Claude a viral reel → it studies the whole thing → it builds you an original in your voice.** One skill gives Claude a permanent memory; the rest run the full creation pipeline. Each is a structured prompt that does one job — no code, no editing suite.
 
-| Skill | What it does |
-|-------|--------------|
-| [AI Brain](skills/ai-brain/SKILL.md) | **Gives Claude permanent memory.** Say "wrap up" and it saves the session to a NotebookLM notebook; next session it recalls only what's relevant. The foundation the others run on. |
-| [Viral Hook Writer](skills/viral-hook-writer/SKILL.md) | 10 scroll-stopping hooks for the first 1-3 seconds, ranked for what to test first. |
-| [Reel Scripter](skills/reel-scripter/SKILL.md) | Turns an idea or hook into a tight 30-45s script with spoken lines + on-screen text. |
-| [Content Repurposer](skills/content-repurposer/SKILL.md) | Turns one blog post / podcast / video into 5+ reel ideas and outlines. |
-| [Caption & Hashtags](skills/caption-and-hashtags/SKILL.md) | Caption, tiered hashtag set, and a first comment built for saves and reach. |
-| [Content Calendar](skills/content-calendar/SKILL.md) | Sequences your ideas into a postable 2-week reel calendar with formats and hooks. |
+| Skill | Team role | What it does |
+|-------|-----------|--------------|
+| [AI Brain](skills/ai-brain/SKILL.md) | Memory | **Gives Claude permanent memory.** Say "wrap up" and it saves the session to a NotebookLM notebook; next session it recalls only what's relevant. The foundation the others run on. |
+| [Reel Analyzer](skills/reel-analyzer/SKILL.md) | Researcher | **Feed it any viral reel** — Claude watches it frame by frame + reads the transcript and breaks down the hook, structure, pacing & visuals, so you can model what works. |
+| [Viral Hook Writer](skills/viral-hook-writer/SKILL.md) | Hook writer | 10 scroll-stopping hooks for the first 1-3 seconds, ranked for what to test first. |
+| [Reel Scripter](skills/reel-scripter/SKILL.md) | Scriptwriter | Turns the breakdown into a tight 30-45s original script — your words, the proven structure. |
+| [Reel Builder](skills/reel-builder/SKILL.md) | Editor | Assembles the whole reel: beat-by-beat script, on-screen text, the visual for each beat + caption — ready to shoot/render. |
+| [Caption & Hashtags](skills/caption-and-hashtags/SKILL.md) | Copywriter | Caption, tiered hashtag set, and a first comment built for saves and reach. |
+| [Content Repurposer](skills/content-repurposer/SKILL.md) | Repurposer | Turns one blog post / podcast / video into 5+ reel ideas and outlines. |
+| [Content Calendar](skills/content-calendar/SKILL.md) | Planner | Sequences your ideas into a postable 2-week reel calendar with formats and hooks. |
 
 ## ⭐ The secret weapon: your NotebookLM memory
 
