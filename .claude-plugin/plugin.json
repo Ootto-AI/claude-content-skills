@@ -1,7 +1,7 @@
 {
   "name": "claude-content-skills",
-  "version": "1.0.0",
-  "description": "5 free, copy-paste Claude skills that run your content growth factory — turn ideas and your NotebookLM memory into scroll-stopping Instagram reels: hooks, scripts, repurposing, captions, and a posting calendar. By Ootto.",
+  "version": "1.1.0",
+  "description": "10 free Claude skills that run your whole reel factory — idea to leads. Content Factory (one-command orchestrator) + AI Brain memory, Reel Analyzer, Viral Hook Writer, Reel Scripter, Reel Builder, Caption & Hashtags, Content Repurposer, Content Calendar, and Comment Responder. By Ootto.",
   "author": {
     "name": "Ootto",
     "url": "https://www.ootto.ai"

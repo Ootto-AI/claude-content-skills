@@ -6,13 +6,13 @@
     "url": "https://www.ootto.ai"
   },
   "metadata": {
-    "description": "Free Claude skills for content growth — turn your ideas and your NotebookLM memory into scroll-stopping Instagram reels: hooks, scripts, repurposing, captions, and a posting calendar. By Ootto, the AI autopilot for small business."
+    "description": "Free Claude skills that run your whole reel factory — idea to leads. Feed Claude a viral reel, it studies it, builds you an original in your voice, and turns comments into DM leads. One Content Factory skill runs the whole pipeline; the rest each do one job. By Ootto, the AI autopilot for small business."
   },
   "plugins": [
     {
       "name": "claude-content-skills",
       "source": "./",
-      "description": "5 free, copy-paste Claude skills that run your content growth factory: Viral Hook Writer, Reel Scripter, Content Repurposer, Caption & Hashtags, and Content Calendar.",
+      "description": "10 free Claude skills that run your whole reel factory — idea to leads. Content Factory (the one-command orchestrator) + AI Brain memory, Reel Analyzer, Viral Hook Writer, Reel Scripter, Reel Builder, Caption & Hashtags, Content Repurposer, Content Calendar, and Comment Responder (comment → DM lead loop).",
       "author": {
         "name": "Ootto",
         "url": "https://www.ootto.ai"

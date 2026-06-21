@@ -13,10 +13,11 @@
 
 ## What this is
 
-Eight Claude "skills" that work like a whole content team in one install. The workflow: **feed Claude a viral reel → it studies the whole thing → it builds you an original in your voice.** One skill gives Claude a permanent memory; the rest run the full creation pipeline. Each is a structured prompt that does one job — no code, no editing suite.
+Ten Claude "skills" that work like a whole content team in one install. The workflow: **feed Claude a viral reel → it studies the whole thing → it builds you an original in your voice → then it turns the comments into leads.** One skill ([Content Factory](skills/content-factory/SKILL.md)) runs **all the others in order** so you get a finished reel + the lead loop from one command; one gives Claude a permanent memory; the rest each do one job in the pipeline. No code, no editing suite.
 
 | Skill | Team role | What it does |
 |-------|-----------|--------------|
+| [**Content Factory**](skills/content-factory/SKILL.md) | **Showrunner** | **The whole setup in one command.** Runs the entire pipeline — find a format → study → hook → script → build → caption → post → lead loop — and repeats it 3× a day. Start here. |
 | [AI Brain](skills/ai-brain/SKILL.md) | Memory | **Gives Claude permanent memory.** Say "wrap up" and it saves the session to a NotebookLM notebook; next session it recalls only what's relevant. The foundation the others run on. |
 | [Reel Analyzer](skills/reel-analyzer/SKILL.md) | Researcher | **Feed it any viral reel** — Claude watches it frame by frame + reads the transcript and breaks down the hook, structure, pacing & visuals, so you can model what works. |
 | [Viral Hook Writer](skills/viral-hook-writer/SKILL.md) | Hook writer | 10 scroll-stopping hooks for the first 1-3 seconds, ranked for what to test first. |
@@ -25,6 +26,31 @@ Eight Claude "skills" that work like a whole content team in one install. The wo
 | [Caption & Hashtags](skills/caption-and-hashtags/SKILL.md) | Copywriter | Caption, tiered hashtag set, and a first comment built for saves and reach. |
 | [Content Repurposer](skills/content-repurposer/SKILL.md) | Repurposer | Turns one blog post / podcast / video into 5+ reel ideas and outlines. |
 | [Content Calendar](skills/content-calendar/SKILL.md) | Planner | Sequences your ideas into a postable 2-week reel calendar with formats and hooks. |
+| [Comment Responder](skills/comment-responder/SKILL.md) | Lead-gen | Turns every comment into a lead on autopilot — warm public reply (no link) + DMs the resource, 24/7. |
+
+## How the whole thing works (the factory)
+
+This is exactly how the page gets made — **idea → leads**, then 3× a day. [Content Factory](skills/content-factory/SKILL.md) runs this start to finish; or run any step on its own.
+
+```
+        ┌─────────── memory: ai-brain (recall your voice + past winners) ───────────┐
+        ▼                                                                            │
+  1. FIND a proven viral reel in your niche  (model the FORMAT, never the words)     │
+  2. STUDY it ............ reel-analyzer ...... frame-by-frame + transcript → hook, beats, pacing
+  3. HOOK ................ viral-hook-writer .. 10 hooks for the first 1–3s, ranked
+  4. SCRIPT .............. reel-scripter ...... 30–45s ORIGINAL script in your voice
+  5. BUILD ............... reel-builder ....... finished reel: beat-by-beat + on-screen text + scene/visual
+  6. CAPTION ............. caption-and-hashtags  caption + tiered hashtags + first comment
+  7. POST ................ publish (or Ootto auto-posts)
+  8. LEADS ............... comment-responder .. every comment → public "check DMs" + DM the resource, 24/7
+        │                                                                            │
+        └────── 9. COMPOUND: save the winner back to ai-brain → next reel is smarter ┘
+```
+
+**Rules that make it land:** the hook carries 80% (front-load it, payoff in ~1.5s, works on mute) · every
+line gets a visual (no "text on a card" for a demo line) · model the format, write your own words (copies
+get buried) · the public reply never contains a link — the link goes in the DM · the CTA must deliver what
+it promises. Rotate the angle each post (result/proof → how-to → contrarian) and stagger morning/midday/evening.
 
 ## ⭐ The secret weapon: your NotebookLM memory
 
@@ -70,9 +96,9 @@ Both copy the skills into `~/.claude/skills/`. Restart Claude Code and the skill
 
 ## How to use
 
-1. Run a skill (e.g. `/viral-hook-writer`) or paste its prompt into Claude.
-2. Give it your topic, audience, and goal.
-3. Get hooks → scripts → captions → a calendar. Film, post, then feed the winners back into your NotebookLM so the factory compounds.
+1. **The whole thing:** run `/content-factory` (or paste its prompt). Give it your niche, your @handle, a viral reel to model (optional), and a CTA keyword — it drives the full pipeline and hands you a finished reel + the lead loop.
+2. **One step:** run any skill on its own (e.g. `/viral-hook-writer`, `/reel-builder`) with your topic, audience, and goal.
+3. Post, then feed the winners back into your NotebookLM (via [AI Brain](skills/ai-brain/SKILL.md)) so the factory compounds. Repeat 3× a day, rotating the angle.
 
 ## ⭐ Star this repo
 
