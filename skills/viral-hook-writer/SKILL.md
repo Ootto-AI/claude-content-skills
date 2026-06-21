@@ -41,7 +41,7 @@ Write 10 hooks for the first 1-3 seconds. Use a spread of proven angles:
 Rules: under 12 words each, spoken-language, no fluff, no hashtags. For each hook add a 3-5 word on-screen text version. Mark the 3 you'd test first and say why in one line.
 ```
 
-**NotebookLM memory tip:** If you've connected NotebookLM via MCP (see Ootto's setup guide), point Claude at your notebook of past reels — "use the hooks that performed best in my notebook as the pattern." Hooks grounded in *your* winners beat generic ones.
+**Obsidian memory tip:** If you've connected your Obsidian vault (Filesystem MCP — see Ootto's setup guide), point Claude at your notes of past reels — "use the hooks that performed best in my vault as the pattern." Hooks grounded in *your* winners beat generic ones.
 
 **Tip:** Always generate 10 and test 2-3. The hook you love is rarely the one that wins.
 

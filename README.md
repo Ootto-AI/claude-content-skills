@@ -1,6 +1,6 @@
 # Claude Content Skills
 
-**Free, copy-paste Claude skills that run your content growth factory** — turn ideas (and your NotebookLM memory) into scroll-stopping Instagram reels: hooks, scripts, repurposing, captions, and a 2-week posting calendar.
+**Free, copy-paste Claude skills that run your content growth factory** — turn ideas (and your Obsidian memory) into scroll-stopping Instagram reels: hooks, scripts, repurposing, captions, and a 2-week posting calendar.
 
 ![Claude Content Skills — by Ootto](assets/banner.png)
 
@@ -18,7 +18,7 @@ Ten Claude "skills" that work like a whole content team in one install. The work
 | Skill | Team role | What it does |
 |-------|-----------|--------------|
 | [**Content Factory**](skills/content-factory/SKILL.md) | **Showrunner** | **The whole setup in one command.** Runs the entire pipeline — find a format → study → hook → script → build → caption → post → lead loop — and repeats it 3× a day. Start here. |
-| [AI Brain](skills/ai-brain/SKILL.md) | Memory | **Gives Claude permanent memory.** Say "wrap up" and it saves the session to a NotebookLM notebook; next session it recalls only what's relevant. The foundation the others run on. |
+| [AI Brain](skills/ai-brain/SKILL.md) | Memory | **Gives Claude permanent memory.** Say "wrap up" and it saves the session to your Obsidian vault (local markdown you own); next session it recalls only what's relevant. The foundation the others run on. |
 | [Reel Analyzer](skills/reel-analyzer/SKILL.md) | Researcher | **Feed it any viral reel** — Claude watches it frame by frame + reads the transcript and breaks down the hook, structure, pacing & visuals, so you can model what works. |
 | [Viral Hook Writer](skills/viral-hook-writer/SKILL.md) | Hook writer | 10 scroll-stopping hooks for the first 1-3 seconds, ranked for what to test first. |
 | [Reel Scripter](skills/reel-scripter/SKILL.md) | Scriptwriter | Turns the breakdown into a tight 30-45s original script — your words, the proven structure. |
@@ -52,27 +52,24 @@ line gets a visual (no "text on a card" for a demo line) · model the format, wr
 get buried) · the public reply never contains a link — the link goes in the DM · the CTA must deliver what
 it promises. Rotate the angle each post (result/proof → how-to → contrarian) and stagger morning/midday/evening.
 
-## ⭐ The secret weapon: your NotebookLM memory
+## ⭐ The secret weapon: your Obsidian second brain
 
 Generic AI content sounds generic. The fix is **memory** — give Claude what's already worked for *you*.
 
-Connect **Google NotebookLM** to Claude with the open-source [`notebooklm-mcp`](https://github.com/PleasePrompto/notebooklm-mcp) server, fill a notebook with your past winning reels, transcripts, brand voice, and a competitor swipe file — and every skill above generates from **your** proven patterns instead of a blank slate.
+Use an **Obsidian vault** (a free folder of Markdown notes you own) as Claude's brain: fill it with your past winning reels, transcripts, brand voice, and a competitor swipe file — and every skill above generates from **your** proven patterns instead of a blank slate. Because it's plain local markdown, Claude reads and writes it directly via the **Filesystem connector** — no browser automation, no login, nothing to sync.
 
 ![The content growth factory](assets/workflow.png)
 
-One command connects it in Claude Code:
+Connect it once in Claude Desktop:
 
-```
-claude mcp add notebooklm -- npx notebooklm-mcp@latest
-```
+1. Get [Obsidian](https://obsidian.md) (free) and make a vault (just a folder). Drop in your winning reels, transcripts, and brand voice.
+2. Add the **Filesystem connector** pointed at that vault: **Settings → Developer → Edit Config**, add the filesystem MCP server with your vault path. (No Claude Desktop? Make a Claude Project and upload the vault as project knowledge.)
 
-Then restart Claude Code, run the `setup_auth` tool to log in to Google once, and `add_notebook` your notebook.
-
-The **[AI Brain](skills/ai-brain/SKILL.md)** skill automates the loop: say *"wrap up"* and Claude writes a tight summary of the session into your notebook; next session it recalls only the relevant bits via semantic search — so Claude never starts from zero and you stop re-pasting the same context.
+The **[AI Brain](skills/ai-brain/SKILL.md)** skill automates the loop: say *"wrap up"* and Claude writes a tight Markdown note of the session into your `AI Brain/` folder (with `#tags` + `[[links]]`); next session it reads back only the relevant notes — so Claude never starts from zero and you stop re-pasting the same context. Everything stays in **your** vault, browsable in Obsidian's graph.
 
 **The full step-by-step (give Claude a permanent memory, then run the content factory on it) is here: [ootto.ai/blog →](https://www.ootto.ai/blog)**
 
-> ⚠️ `notebooklm-mcp` is a community tool that drives NotebookLM via browser automation (a one-time Google login). It's not an official Google/Anthropic integration — great for personal use; mind NotebookLM's terms.
+> 💡 It's just local markdown you own — back it up / sync it however you like (iCloud, git, Obsidian Sync). Nothing leaves your machine except the notes you let Claude read.
 
 ## Installation
 
@@ -98,7 +95,7 @@ Both copy the skills into `~/.claude/skills/`. Restart Claude Code and the skill
 
 1. **The whole thing:** run `/content-factory` (or paste its prompt). Give it your niche, your @handle, a viral reel to model (optional), and a CTA keyword — it drives the full pipeline and hands you a finished reel + the lead loop.
 2. **One step:** run any skill on its own (e.g. `/viral-hook-writer`, `/reel-builder`) with your topic, audience, and goal.
-3. Post, then feed the winners back into your NotebookLM (via [AI Brain](skills/ai-brain/SKILL.md)) so the factory compounds. Repeat 3× a day, rotating the angle.
+3. Post, then feed the winners back into your Obsidian vault (via [AI Brain](skills/ai-brain/SKILL.md)) so the factory compounds. Repeat 3× a day, rotating the angle.
 
 ## ⭐ Star this repo
 

@@ -39,7 +39,7 @@ For each post give: day, pillar, format (talking-head / list / story / demo / ho
 Return it as a clean table: Day | Pillar | Format | Hook | Goal.
 ```
 
-**NotebookLM memory tip:** Connect your NotebookLM notebook via MCP and ask Claude to "weight the calendar toward the pillars and formats that performed best in my notebook." The plan compounds on what already works for you.
+**Obsidian memory tip:** Connect your Obsidian vault (Filesystem MCP) and ask Claude to "weight the calendar toward the pillars and formats that performed best in my vault." The plan compounds on what already works for you.
 
 **Tip:** Batch-film a week in one session. The calendar's real job is to make filming fast.
 

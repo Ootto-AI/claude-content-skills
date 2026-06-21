@@ -45,7 +45,7 @@ Do this:
 Keep it concrete and lifted from the source — no generic filler.
 ```
 
-**NotebookLM memory tip:** Upload your long-form library to a NotebookLM notebook, connect it via MCP, and Claude can repurpose *across* sources — "find the 5 best reel ideas across everything I published this quarter," not just one post.
+**Obsidian memory tip:** Keep your long-form library in your Obsidian vault (Filesystem MCP), and Claude can repurpose *across* sources — "find the 5 best reel ideas across everything I published this quarter," not just one post.
 
 **Tip:** One good podcast can become 8-10 reels. Batch the scripts, then film in one sitting.
 

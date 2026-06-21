@@ -44,7 +44,7 @@ Structure:
 Output a two-column script: [SPOKEN line] | [ON-SCREEN text]. Keep spoken lines to ~140 words total. Add a 1-line B-roll/visual suggestion per beat. End with 2 alternate CTAs.
 ```
 
-**NotebookLM memory tip:** With NotebookLM connected via MCP, ask Claude to "match the pacing and structure of my best-performing reels in the notebook." It scripts in your proven format, not a generic one.
+**Obsidian memory tip:** With your vault connected (Filesystem MCP), ask Claude to "match the pacing and structure of my best-performing reels in my vault." It scripts in your proven format, not a generic one.
 
 **Tip:** Read it out loud and cut 20%. Short-form rewards tight.
 

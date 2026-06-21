@@ -41,7 +41,7 @@ Give me:
 Match the niche's language. No emojis-as-bullets unless on-brand.
 ```
 
-**NotebookLM memory tip:** With your notebook connected via MCP, ask Claude to "reuse the hashtag sets and CTA style from my best-saved posts." Your proven tags beat a generic list.
+**Obsidian memory tip:** With your vault connected (Filesystem MCP), ask Claude to "reuse the hashtag sets and CTA style from my best-saved posts." Your proven tags beat a generic list.
 
 **Tip:** The first line of the caption is a second hook. Make it earn the "…more" tap.
 

@@ -97,7 +97,7 @@ Run the factory three times a day, rotating the angle so the feed stays varied:
   next batch starts from what already worked for *you*.
 
 ## Memory makes it yours
-Generic in → generic out. Connect [ai-brain](../ai-brain/SKILL.md) (NotebookLM) first so every step pulls
+Generic in → generic out. Connect [ai-brain](../ai-brain/SKILL.md) (Obsidian vault) first so every step pulls
 from **your** proven hooks, voice, and swipe file — that's the difference between "AI content" and content
 that sounds like you. Full setup: [ootto.ai/blog →](https://www.ootto.ai/blog)
 
