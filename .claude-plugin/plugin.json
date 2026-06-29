@@ -1,7 +1,7 @@
 {
   "name": "claude-content-skills",
-  "version": "1.1.0",
-  "description": "10 free Claude skills that run your whole reel factory — idea to leads. Content Factory (one-command orchestrator) + AI Brain memory, Reel Analyzer, Viral Hook Writer, Reel Scripter, Reel Builder, Caption & Hashtags, Content Repurposer, Content Calendar, and Comment Responder. By Ootto.",
+  "version": "1.2.0",
+  "description": "11 free Claude skills that run your whole reel factory — idea to leads. Content Factory (one-command orchestrator) + Going Viral (strategy), AI Brain memory, Reel Analyzer, Viral Hook Writer, Reel Scripter, Reel Builder, Caption & Hashtags, Content Repurposer, Content Calendar, and Comment Responder. By Ootto.",
   "author": {
     "name": "Ootto",
     "url": "https://www.ootto.ai"
@@ -20,6 +20,7 @@
     "obsidian",
     "claude-skills",
     "small-business",
-    "ootto"
+    "ootto",
+    "going-viral"
   ]
 }
