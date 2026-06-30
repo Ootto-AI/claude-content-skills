@@ -65,6 +65,40 @@ the *sender* look smart/early/right. High-arousal beats positive: awe, anger, FO
 - **Keep it short + re-watchable.** The reel teases; the caption delivers. A tight loop drives replays,
   and replays drive reach.
 
+## Step 3.5 — Curiosity & the incentivized wait (make them watch to the END)
+
+The single biggest watch-time lever: **give them a reason to wait — promise the payoff up front, then
+withhold it until the end.** This is exactly what made *"I let Claude post for 6 days — Day 6 broke
+everything"* work: the climax is teased in second 0, but you have to watch the whole thing to get it.
+
+**The mechanic — promise → withhold → escalate → pay off:**
+1. **Tease the payoff in the hook, but don't show it.** Name that something big is coming *and where*
+   ("Day 6 broke everything", "the 5th one is the one that 10×'d it", "wait for the last step"). The
+   viewer now has a concrete reason to stay — an open loop that only closes at the end.
+2. **Make it an escalating series with a visible finish line.** Number or date the beats (Day 1 → Day 6,
+   prompt 1 → 5, step 1 → 4) so they always know how far the payoff is. A countdown is unscrollable —
+   quitting early *feels like losing* the thing you were promised.
+3. **Each beat out-does the last** (or raises the tension), so leaving always costs more than staying.
+   Save the single best / most surprising moment for the very last beat.
+4. **Pay it off — for real.** The end must deliver the promised thing (the Day-6 result, the #5 prompt,
+   the "secret"). **Tease, never lie:** an unpaid loop makes the viewer feel cheated — it kills saves +
+   shares and trains the algorithm that you waste watch-time.
+
+**Curiosity-gap hooks (open the loop the brain *must* close):**
+- "I did [X] for [N] days — [Day N / the last one] broke everything." ← the 6-day pattern
+- "The one [setting / prompt / step] nobody talks about — and it's #[N]."
+- "Watch till the end — the last one is the only one that actually worked."
+- "[N] ways to do [X]. #[N] should be illegal." / "save #[N] for later."
+- **Withhold the mechanism:** show the *result*, make them stay for the *how*.
+
+**The incentive to wait must be EXPLICIT and worth it.** Name a concrete reward for reaching the end —
+the exact result, the secret prompt, the number. Vague "stay tuned" doesn't hold; *"Day 6 hit 24k —
+here's the one thing that did it"* does. That payoff is also the natural bridge into the CTA (comment the
+keyword → I'll DM you the thing).
+
+**Never resolve the loop early.** If you reveal the payoff in the middle, the loop closes and they leave.
+Hold the climax for the final beat, then convert immediately.
+
 ## Step 4 — Convert (the funnel)
 
 The reel hooks + teases → the **caption** delivers the full value → a **comment keyword → auto-DM** turns
@@ -90,7 +124,8 @@ a watcher into a lead.
 ## The 5-step checklist
 1. Choose the goal → look up its emotion (Step 1).
 2. Manufacture that emotion with the matching mechanic; obey the hook rule (Step 2).
-3. Open a curiosity gap in the hook and keep it open past the watch-time checkpoint.
+3. Open a curiosity gap in the hook — **promise the payoff up front, withhold it to the end** (escalating
+   series w/ a visible finish line → save the best for last → reward the wait). Never resolve it early.
 4. Decide where the payoff lives — in-reel (proof) or withheld to caption + DM (default for value/lead posts).
 5. Convert with one CTA — Save / Share / Follow / Comment-keyword — and close every loop you opened.
 
