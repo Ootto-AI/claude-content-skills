@@ -26,8 +26,10 @@ You found a reel/Short/TikTok that's clearly working and you want to make your *
 voice. Start here — the breakdown feeds the hook writer, the scripter, and the builder.
 
 ## What you'll need
-The reel **link** (or a downloaded video file). Optional: your niche and the angle you want to take, so
-the breakdown is framed for *your* remake.
+The reel **link** (or a downloaded video file). Don't have one yet, or only have a link?
+[agent-reach](../agent-reach/SKILL.md) is the step before this — it **finds** a proven reel to model
+(and mines Reddit for what to make it about) and **downloads** any URL to its transcript, which is what
+this skill reads. Optional: your niche and the angle you want, so the breakdown is framed for *your* remake.
 
 ## Instructions
 Give Claude the reel and run this. (In Claude Code, point it at the file/frames + transcript; on

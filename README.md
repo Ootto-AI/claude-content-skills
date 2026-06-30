@@ -13,12 +13,13 @@
 
 ## What this is
 
-Eleven Claude "skills" that work like a whole content team in one install. The workflow: **feed Claude a viral reel → it studies the whole thing → it builds you an original in your voice → then it turns the comments into leads.** One skill ([Content Factory](skills/content-factory/SKILL.md)) runs **all the others in order** so you get a finished reel + the lead loop from one command; one gives Claude a permanent memory; the rest each do one job in the pipeline. No code, no editing suite.
+Twelve Claude "skills" that work like a whole content team in one install. The workflow: **scrape what's in demand → feed Claude a viral reel → it studies the whole thing → it builds you an original in your voice → then it turns the comments into leads.** One skill ([Content Factory](skills/content-factory/SKILL.md)) runs **all the others in order** so you get a finished reel + the lead loop from one command; one gives Claude a permanent memory; the rest each do one job in the pipeline. No code, no editing suite.
 
 | Skill | Team role | What it does |
 |-------|-----------|--------------|
 | [**Content Factory**](skills/content-factory/SKILL.md) | **Showrunner** | **The whole setup in one command.** Runs the entire pipeline — find a format → study → hook → script → build → caption → post → lead loop — and repeats it 3× a day. Start here. |
 | [AI Brain](skills/ai-brain/SKILL.md) | Memory | **Gives Claude permanent memory.** Say "wrap up" and it saves the session to your Obsidian vault (local markdown you own); next session it recalls only what's relevant. The foundation the others run on. |
+| [Agent Reach](skills/agent-reach/SKILL.md) | Scout | **Scrapes the internet for you** — mines Reddit/communities for what people actually want (your topics), finds trending reels to model, and downloads any reel/Short → transcript. The FIND step. Free, no login. *(Bundled from [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach), MIT.)* |
 | [Reel Analyzer](skills/reel-analyzer/SKILL.md) | Researcher | **Feed it any viral reel** — Claude watches it frame by frame + reads the transcript and breaks down the hook, structure, pacing & visuals, so you can model what works. |
 | [Going Viral](skills/going-viral/SKILL.md) | Strategist | **The strategy above the hook.** Pick the goal (saves / shares / follows / leads) → the emotion that drives it → the hook + funnel built around it. Distilled from 160+ analysed viral reels. |
 | [Viral Hook Writer](skills/viral-hook-writer/SKILL.md) | Hook writer | 10 scroll-stopping hooks for the first 1-3 seconds, ranked for what to test first. |

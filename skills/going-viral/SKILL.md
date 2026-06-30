@@ -130,6 +130,7 @@ a watcher into a lead.
 5. Convert with one CTA — Save / Share / Follow / Comment-keyword — and close every loop you opened.
 
 ## Works with
+**agent-reach** (scrape Reddit demand + find/download the reel to model — the FIND step) ·
 **viral-hook-writer** (the hook itself) · **reel-analyzer** (study a proven viral reel first) ·
 **reel-scripter** + **reel-builder** (build it) · **caption-and-hashtags** (the caption funnel) ·
 **comment-responder** (the keyword → DM lead loop) · **content-factory** (runs the whole pipeline).

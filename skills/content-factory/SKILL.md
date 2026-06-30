@@ -31,7 +31,7 @@ drives the entire pipeline.
 
 ```
 0. MEMORY      ai-brain ............. recall your voice + past winners (so it sounds like YOU)
-1. FIND        (you/Claude) ......... pick a proven viral reel in your niche to model the FORMAT
+1. FIND        agent-reach .......... scrape Reddit demand + find/download a proven reel to model
 2. STUDY       reel-analyzer ........ watch it frame-by-frame + transcript → hook, beats, pacing, visuals
 3. HOOK        viral-hook-writer .... 10 scroll-stopping hooks for the first 1–3s, ranked
 4. SCRIPT      reel-scripter ........ tight 30–45s ORIGINAL script — your words, the proven structure
@@ -42,7 +42,8 @@ drives the entire pipeline.
 9. COMPOUND    ai-brain ............. save what worked back to memory → the next reel starts smarter
 ```
 
-Steps 2–6 are pure Claude. Step 1 you choose (or ask Claude to suggest formats). Steps 7–8 are where you
+Steps 2–6 are pure Claude. Step 1 ([agent-reach](../agent-reach/SKILL.md)) scrapes Reddit for what to
+post about + finds/downloads the reel to model — no login (or just hand Claude a URL). Steps 7–8 are where you
 hit publish and the lead loop takes over. Step 9 closes the loop so the factory **compounds**.
 
 ## When to use

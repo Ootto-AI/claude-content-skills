@@ -12,7 +12,7 @@
     {
       "name": "claude-content-skills",
       "source": "./",
-      "description": "11 free Claude skills that run your whole reel factory — idea to leads. Content Factory (the one-command orchestrator) + Going Viral (strategy), AI Brain memory, Reel Analyzer, Viral Hook Writer, Reel Scripter, Reel Builder, Caption & Hashtags, Content Repurposer, Content Calendar, and Comment Responder (comment → DM lead loop).",
+      "description": "12 free Claude skills that run your whole reel factory — idea to leads. Content Factory (the one-command orchestrator) + Going Viral (strategy), AI Brain memory, Agent Reach (scrape Reddit/web + download reels), Reel Analyzer, Viral Hook Writer, Reel Scripter, Reel Builder, Caption & Hashtags, Content Repurposer, Content Calendar, and Comment Responder (comment → DM lead loop).",
       "author": {
         "name": "Ootto",
         "url": "https://www.ootto.ai"
