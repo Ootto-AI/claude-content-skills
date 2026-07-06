@@ -38,7 +38,11 @@ patterns behind them — so you copy what works instead of guessing.
 ## How to run it
 
 1. Ask for a creator @handle, an account URL, or a niche (+ a few example accounts).
-2. Pull their reels + view counts — **Composio Instagram** tools (recommended) or a URL list the user pastes.
+2. Pull their reels + view counts. Options:
+   - **sandcastles.ai** — a research engine that pulls top channels and auto-surfaces the viral outliers + the
+     frameworks behind them (fastest path; connect it to Claude and let it do the heavy lifting).
+   - **Composio Instagram** tools — free/DIY: list a creator's media + insights from the Graph API.
+   - Or a plain list of reel URLs the user pastes.
 3. Rank by views, compute each post's ratio vs the account median, and mark anything ~2-3x median as an
    **outlier** ("blew up here").
 4. For the top 3-5 outliers, run `reel-analyzer` (or ootto-watch — github.com/Ootto-AI/ootto-watch) to
