@@ -6,13 +6,13 @@
     "url": "https://www.ootto.ai"
   },
   "metadata": {
-    "description": "Free Claude skills that run your whole reel factory — idea to leads. Feed Claude a viral reel, it studies it, builds you an original in your voice, and turns comments into DM leads. One Content Factory skill runs the whole pipeline; the rest each do one job. By Ootto, the AI autopilot for small business."
+    "description": "Free Claude skills that run your whole reel factory \u2014 idea to leads. Feed Claude a viral reel, it studies it, builds you an original in your voice, and turns comments into DM leads. One Content Factory skill runs the whole pipeline; the rest each do one job. By Ootto, the AI autopilot for small business."
   },
   "plugins": [
     {
       "name": "claude-content-skills",
       "source": "./",
-      "description": "12 free Claude skills that run your whole reel factory — idea to leads. Content Factory (the one-command orchestrator) + Going Viral (strategy), AI Brain memory, Agent Reach (scrape Reddit/web + download reels), Reel Analyzer, Viral Hook Writer, Reel Scripter, Reel Builder, Caption & Hashtags, Content Repurposer, Content Calendar, and Comment Responder (comment → DM lead loop).",
+      "description": "13 free Claude skills that run your whole reel factory \u2014 idea to leads. Content Factory (the one-command orchestrator) + Going Viral (strategy), AI Brain memory, Agent Reach (scrape Reddit/web + download reels), Reel Analyzer, Viral Hook Writer, Reel Scripter, Reel Builder, Caption & Hashtags, Content Repurposer, Content Calendar, and Comment Responder (comment \u2192 DM lead loop), and Content Research (research any niche \u2192 find what blew up \u2192 the playbook).",
       "author": {
         "name": "Ootto",
         "url": "https://www.ootto.ai"
