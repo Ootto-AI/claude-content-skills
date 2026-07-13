@@ -49,6 +49,44 @@ Then give me: the final hook (3 options), the full VO script as one paragraph, a
 [viral-hook-writer](../viral-hook-writer/SKILL.md) (the opener) → this (the full build) →
 [caption-and-hashtags](../caption-and-hashtags/SKILL.md) (the post).
 
+## Rendering the reel — the video engine (make it, not just script it)
+
+Scripting is half the job; this is how you turn the build table into a real, cinematic reel that
+actually gets watched. Use a **hybrid engine**, matched to the tier:
+
+- **Character-acting / cinematic beats → Seedance (image-to-video).** Seedance runs on **Runway** via
+  the RunwayML SDK with `model: "seedance2"` (portrait `720:1280` for a 9:16 reel, ~5s per clip).
+  Generate a conditioning still of the character/scene, then i2v it so the subject genuinely MOVES and
+  performs. Cost ≈ $6–12 per reel — reserve it for the premium ($599 done-for-you) tier, not the $20 self-serve one.
+- **Hook, chapter, text, payoff, CTA beats → Remotion code-render ($0).** Fast, free, on-theme. This is
+  the whole $20-tier reel and the text scaffolding of the premium one.
+
+**Non-negotiables (each of these was a real failure once — do not repeat them):**
+1. **The hook needs a gripping VISUAL, not just text.** Open on something that grabs (e.g. a creator
+   hacking a glowing terminal, a lock cracking, sparks) — the payoff word lands in the first ~1.5s.
+2. **The character ACTS through a progressive action — never ping-pong/loop a few poses.** Looping a small
+   pose set back-and-forth (A→B→A→B) reads as "replaying" and plays actions in reverse. Each beat is ONE
+   forward action, start to finish. Seedance i2v does this natively; posed-frame Remotion does NOT (it
+   loops and reads choppy — avoid it for real acting).
+3. **Sync the visual to the VOICEOVER, not a wall-clock.** Transcribe the VO (word timestamps) and cut/act
+   ON the word — the action must match what's being said. Lead the cut ~10 frames.
+4. **Emphasis text must be high-contrast and readable** on every background (e.g. bright amber `#FFCC33`
+   with a dark outline stroke reads on both dark and light beats).
+5. **Close on an on-screen CTA card, tied to the comment system.** End with a themed "Comment [KEYWORD] and
+   I'll DM you [the thing]" card (an IG-composer graphic that types the keyword) — use the SAME keyword the
+   caption uses and that the auto-responder is wired to, so comment → auto-DM → lead actually fires. Wire the
+   keyword in [comment-responder](../comment-responder/SKILL.md) BEFORE you post, so the moment a viewer
+   comments the keyword they get the auto-DM. Honest only: the keyword must be really wired.
+6. **No fabricated numbers.** If a metric can't be verified, don't put it on screen.
+
+**Verify before you ship — WATCH and MEASURE the playback, never trust a still.** Extract frames at ~12fps
+and confirm: motion is progressive (no repeating/ping-pong autocorrelation period), no frozen beats while
+the VO talks, and each action's cut aligns to its narration cue. Then eyeball the whole thing end to end.
+A reel that was never watched ships broken.
+
+**Credentials:** use an API key you were explicitly given, from your OWN project's env only. Never search
+the filesystem for a key or read another product's `.env` — if you don't have the key, stop and ask.
+
 **Honesty:** only promise a CTA you can deliver (if "comment WORD → I'll DM it", actually send it).
 
 ---
