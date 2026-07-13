@@ -30,31 +30,33 @@ drives the entire pipeline.
 ## The pipeline (what runs, in order)
 
 ```
-0. CONNECT     Ootto MCP ........... one-time: connect Apify (teardown) + Composio→Instagram (post + DM)
+0. CONNECT     onboarding .......... one-time: connect the Apify MCP (teardown) + the Composio MCP→Instagram
+                                      (post + DM), and make sure Remotion is available (render). Ask if missing.
 1. MEMORY      ai-brain ............. recall your voice + past winners (so it sounds like YOU)
-2. FIND+STUDY  MCP dissect_reel ..... tear a proven reel down frame-by-frame + transcript (Apify)
+2. FIND+STUDY  Apify ............... tear a proven reel down frame-by-frame + transcript
 3. HOOK        viral-hook-writer .... 10 scroll-stopping hooks for the first 1–3s, ranked
 4. SCRIPT      reel-scripter ........ tight 30–45s ORIGINAL script — your words, the proven structure
-5. BUILD+RENDER reel-builder + MCP reel_create ... the REAL rendered mp4 (Seedance/Runway + Remotion)
+5. BUILD+RENDER reel-builder + Remotion (+ Seedance via Runway) ... the REAL rendered mp4
 6. CAPTION     caption-and-hashtags . caption + tiered hashtags + a first comment built for saves
-7. POST        MCP reel_post ........ actually publishes to your IG via Composio (after your OK)
-8. LEADS       MCP autoreply ........ keyword rule LIVE — every comment → public reply + DM, 24/7
+7. POST        Composio ............ actually publishes to your Instagram (after your OK)
+8. LEADS       Composio ............ keyword rule LIVE — every comment → public reply + DM, 24/7
 9. COMPOUND    ai-brain ............. save what worked back to memory → the next reel starts smarter
 ```
 
-**This runs for REAL through the Ootto MCP — it is a harness, not a description.** The creative steps
-(3–6 script/hook/caption) are Claude; the execution steps CALL the MCP tools:
-- **Step 0 CONNECT (once):** run `social_connect` to link the user's Instagram via Composio, and confirm
-  Apify teardown is available. If a key/connection is missing, ASK the user to connect it — never hunt for
-  a key or reuse another account's. This is the "get Apify, then Composio" setup the whole loop depends on.
-- **Step 2** calls `dissect_reel` (Apify-backed) to actually tear down the model reel.
-- **Step 5** calls `reel_create` to actually RENDER the mp4 (the reel-builder render harness: Seedance via
-  Runway for acting beats, Remotion for text/CTA — see [reel-builder](../reel-builder/SKILL.md)).
-- **Step 7** calls `reel_post` to actually publish (pause for the user's go-ahead first).
-- **Step 8** calls `autoreply_rule_add` + the responder so the comment→DM lead loop fires live, 24/7.
+**This runs for REAL by calling the tools directly — it is a harness, not a description.** The creative
+steps (3–6 script/hook/caption) are Claude; the execution steps use the underlying tools, no wrapper:
+- **Step 0 CONNECT (once, at onboarding):** connect the **Apify MCP** (reel teardown/scraping) and the
+  **Composio MCP → Instagram** (posting + comment/DM), and confirm **Remotion** is installed for rendering.
+  If any of these is NOT connected, STOP and ASK the user to connect it (walk them through Apify, then
+  Composio/Instagram) — never search for or reuse a key. This onboarding is what the whole loop depends on.
+- **Step 2** uses **Apify** to actually tear down the model reel.
+- **Step 5** renders the real mp4 with **Remotion** (+ **Seedance via Runway** for acting beats) — see
+  [reel-builder](../reel-builder/SKILL.md) for the render harness.
+- **Step 7** uses **Composio** to actually publish to the user's Instagram (pause for their OK first).
+- **Step 8** uses **Composio** to wire the comment→DM lead loop so it fires live, 24/7.
 
-If the MCP is not connected in the session, the skill degrades to the creative pipeline only (script +
-plan) and tells the user exactly what to connect (Apify, Composio/Instagram) to make it run end to end.
+If a tool isn't connected, do the creative pipeline (script + plan) and tell the user exactly what to
+connect — Apify, then Composio/Instagram, plus Remotion — to make it run end to end. Never fake a render or a post.
 
 ## When to use
 You want the *whole* reel + lead loop, not one piece. Run this as your daily driver. For a single step,
@@ -82,23 +84,22 @@ CONTEXT
 - My @handle: [@you]   ·   My voice: [a line, or "use ai-brain"]   ·   CTA keyword: [e.g. GUIDE]
 
 PIPELINE
-0) CONNECT (once): check the Ootto MCP is connected. Run social_connect to link my Instagram (Composio) and
-   confirm Apify teardown is available. IF ANYTHING IS NOT CONNECTED, STOP AND ASK ME TO CONNECT IT — tell me
-   exactly what to do (connect Apify, then connect Instagram via Composio) and wait; never search for or reuse
-   a key. Only continue once it is connected.
+0) CONNECT (once, onboarding): connect the Apify MCP (teardown), the Composio MCP → my Instagram (post + DM),
+   and confirm Remotion is available (render). IF ANY IS NOT CONNECTED, STOP AND ASK ME TO CONNECT IT — walk me
+   through Apify, then Composio/Instagram — and wait; never search for or reuse a key. Only continue once connected.
 0.5) ai-brain: recall my voice + past winners (if connected).
-1) FIND+STUDY: dissect_reel (MCP/Apify) on the model URL (or your suggested pick) → hook, beats, pacing, visuals.
+1) FIND+STUDY: use Apify to tear down the model URL (or your suggested pick) → hook, beats, pacing, visuals.
 2) viral-hook-writer: 10 hooks, ranked; I'll pick one (or you pick the strongest).
 3) reel-scripter: a 30–45s ORIGINAL script in MY voice on that structure (never a copy).
-4) reel-builder + reel_create (MCP): actually RENDER the reel (Seedance via Runway for acting beats, Remotion
-   for text/CTA) → a real mp4, with the on-screen comment-CTA card. Show me the beat table + the rendered reel.
+4) reel-builder + Remotion (+ Seedance via Runway): actually RENDER the reel → a real mp4 with the on-screen
+   comment-CTA card. Show me the beat table + the rendered reel.
 5) caption-and-hashtags: caption + tiered hashtags + first comment, with my CTA keyword.
-6) POST: pause for my OK, then reel_post (MCP/Composio) actually publishes to my IG. If I say wait, just stage it.
-7) autoreply_rule_add (MCP) + comment-responder: wire the CTA keyword LIVE so every comment → public reply + DM, 24/7.
+6) POST: pause for my OK, then Composio actually publishes to my IG. If I say wait, just stage it.
+7) Composio + comment-responder: wire the CTA keyword LIVE so every comment → public reply + DM, 24/7.
 8) ai-brain: save the winning hook/format back to memory.
 
-If the MCP is not connected at all, do steps 1–5 as the creative pipeline and tell me exactly what to connect
-(Apify, then Instagram via Composio) to make it run end to end — do not fake the render or the post.
+If a tool isn't connected, do steps 1–5 as the creative pipeline and tell me exactly what to connect
+(Apify, then Instagram via Composio, plus Remotion) to make it run end to end — never fake the render or the post.
 
 RULES
 - Model the FORMAT, never the words — original script in my voice (copies get buried by IG Originality).
