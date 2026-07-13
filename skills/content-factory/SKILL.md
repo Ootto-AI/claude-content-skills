@@ -30,21 +30,31 @@ drives the entire pipeline.
 ## The pipeline (what runs, in order)
 
 ```
-0. MEMORY      ai-brain ............. recall your voice + past winners (so it sounds like YOU)
-1. FIND        agent-reach .......... scrape Reddit demand + find/download a proven reel to model
-2. STUDY       reel-analyzer ........ watch it frame-by-frame + transcript → hook, beats, pacing, visuals
+0. CONNECT     Ootto MCP ........... one-time: connect Apify (teardown) + Composio→Instagram (post + DM)
+1. MEMORY      ai-brain ............. recall your voice + past winners (so it sounds like YOU)
+2. FIND+STUDY  MCP dissect_reel ..... tear a proven reel down frame-by-frame + transcript (Apify)
 3. HOOK        viral-hook-writer .... 10 scroll-stopping hooks for the first 1–3s, ranked
 4. SCRIPT      reel-scripter ........ tight 30–45s ORIGINAL script — your words, the proven structure
-5. BUILD       reel-builder ......... the finished reel: beat-by-beat, on-screen text, scene per beat
+5. BUILD+RENDER reel-builder + MCP reel_create ... the REAL rendered mp4 (Seedance/Runway + Remotion)
 6. CAPTION     caption-and-hashtags . caption + tiered hashtags + a first comment built for saves
-7. POST        (you/Ootto) .......... publish the reel
-8. LEADS       comment-responder .... every comment → warm public reply (no link) + DM the resource, 24/7
+7. POST        MCP reel_post ........ actually publishes to your IG via Composio (after your OK)
+8. LEADS       MCP autoreply ........ keyword rule LIVE — every comment → public reply + DM, 24/7
 9. COMPOUND    ai-brain ............. save what worked back to memory → the next reel starts smarter
 ```
 
-Steps 2–6 are pure Claude. Step 1 ([agent-reach](../agent-reach/SKILL.md)) scrapes Reddit for what to
-post about + finds/downloads the reel to model — no login (or just hand Claude a URL). Steps 7–8 are where you
-hit publish and the lead loop takes over. Step 9 closes the loop so the factory **compounds**.
+**This runs for REAL through the Ootto MCP — it is a harness, not a description.** The creative steps
+(3–6 script/hook/caption) are Claude; the execution steps CALL the MCP tools:
+- **Step 0 CONNECT (once):** run `social_connect` to link the user's Instagram via Composio, and confirm
+  Apify teardown is available. If a key/connection is missing, ASK the user to connect it — never hunt for
+  a key or reuse another account's. This is the "get Apify, then Composio" setup the whole loop depends on.
+- **Step 2** calls `dissect_reel` (Apify-backed) to actually tear down the model reel.
+- **Step 5** calls `reel_create` to actually RENDER the mp4 (the reel-builder render harness: Seedance via
+  Runway for acting beats, Remotion for text/CTA — see [reel-builder](../reel-builder/SKILL.md)).
+- **Step 7** calls `reel_post` to actually publish (pause for the user's go-ahead first).
+- **Step 8** calls `autoreply_rule_add` + the responder so the comment→DM lead loop fires live, 24/7.
+
+If the MCP is not connected in the session, the skill degrades to the creative pipeline only (script +
+plan) and tells the user exactly what to connect (Apify, Composio/Instagram) to make it run end to end.
 
 ## When to use
 You want the *whole* reel + lead loop, not one piece. Run this as your daily driver. For a single step,
@@ -72,16 +82,23 @@ CONTEXT
 - My @handle: [@you]   ·   My voice: [a line, or "use ai-brain"]   ·   CTA keyword: [e.g. GUIDE]
 
 PIPELINE
-0) ai-brain: recall my voice + past winners (if connected).
-1) FIND: confirm the format to model (the URL above, or your suggested pick).
-2) reel-analyzer: study it → hook, beat structure, pacing, on-screen visuals.
-3) viral-hook-writer: 10 hooks, ranked; I'll pick one (or you pick the strongest).
-4) reel-scripter: a 30–45s ORIGINAL script in MY voice on that structure (never a copy).
-5) reel-builder: the finished reel — beat-by-beat table: VO line | on-screen text | scene/visual | ~secs.
-6) caption-and-hashtags: caption + tiered hashtags + first comment, with my CTA keyword.
-7) POST: give me the final reel + caption to publish (or note where Ootto auto-posts).
-8) comment-responder: the keyword rule — link-free public reply + the DM that delivers the resource.
-9) ai-brain: save the winning hook/format back to memory.
+0) CONNECT (once): check the Ootto MCP is connected. Run social_connect to link my Instagram (Composio) and
+   confirm Apify teardown is available. IF ANYTHING IS NOT CONNECTED, STOP AND ASK ME TO CONNECT IT — tell me
+   exactly what to do (connect Apify, then connect Instagram via Composio) and wait; never search for or reuse
+   a key. Only continue once it is connected.
+0.5) ai-brain: recall my voice + past winners (if connected).
+1) FIND+STUDY: dissect_reel (MCP/Apify) on the model URL (or your suggested pick) → hook, beats, pacing, visuals.
+2) viral-hook-writer: 10 hooks, ranked; I'll pick one (or you pick the strongest).
+3) reel-scripter: a 30–45s ORIGINAL script in MY voice on that structure (never a copy).
+4) reel-builder + reel_create (MCP): actually RENDER the reel (Seedance via Runway for acting beats, Remotion
+   for text/CTA) → a real mp4, with the on-screen comment-CTA card. Show me the beat table + the rendered reel.
+5) caption-and-hashtags: caption + tiered hashtags + first comment, with my CTA keyword.
+6) POST: pause for my OK, then reel_post (MCP/Composio) actually publishes to my IG. If I say wait, just stage it.
+7) autoreply_rule_add (MCP) + comment-responder: wire the CTA keyword LIVE so every comment → public reply + DM, 24/7.
+8) ai-brain: save the winning hook/format back to memory.
+
+If the MCP is not connected at all, do steps 1–5 as the creative pipeline and tell me exactly what to connect
+(Apify, then Instagram via Composio) to make it run end to end — do not fake the render or the post.
 
 RULES
 - Model the FORMAT, never the words — original script in my voice (copies get buried by IG Originality).
