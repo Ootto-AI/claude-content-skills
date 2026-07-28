@@ -23,6 +23,7 @@ Twelve Claude "skills" that work like a whole content team in one install. The w
 | [Reel Analyzer](skills/reel-analyzer/SKILL.md) | Researcher | **Feed it any viral reel** — Claude watches it frame by frame + reads the transcript and breaks down the hook, structure, pacing & visuals, so you can model what works. |
 | [Going Viral](skills/going-viral/SKILL.md) | Strategist | **The strategy above the hook.** Pick the goal (saves / shares / follows / leads) → the emotion that drives it → the hook + funnel built around it. Distilled from 160+ analysed viral reels. |
 | [Viral Hook Writer](skills/viral-hook-writer/SKILL.md) | Hook writer | 10 scroll-stopping hooks for the first 1-3 seconds, ranked for what to test first. |
+| [Hook Mining](skills/hook-mining/SKILL.md) | Hook miner | **Feed it a CSV of hooks that actually performed** (Sandcastles export, your analytics, scraped competitors) — it ranks them, buckets them by psychological pattern, then remixes: the proven structure stays fixed, only the power words get swapped. The opposite of slop. |
 | [Reel Scripter](skills/reel-scripter/SKILL.md) | Scriptwriter | Turns the breakdown into a tight 30-45s original script — your words, the proven structure. |
 | [Reel Builder](skills/reel-builder/SKILL.md) | Editor | Assembles the whole reel: beat-by-beat script, on-screen text, the visual for each beat + caption — ready to shoot/render. |
 | [Caption & Hashtags](skills/caption-and-hashtags/SKILL.md) | Copywriter | Caption, tiered hashtag set, and a first comment built for saves and reach. |
