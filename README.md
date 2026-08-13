@@ -82,7 +82,6 @@ Every number below is from a real run, published with the full method - not a pr
 - **36,369 views, 20,548 accounts reached** - three reels a day, one account, seven days. [First line to first lead →](https://www.ootto.ai/blog/14-claude-skills-actually-used)
 - **560 comments classified, 78 posts scanned** in one real Instagram audit run. [Claude answered 560 comments →](https://www.ootto.ai/blog/claude-answered-560-instagram-comments)
 - **31.1% median scroll depth across 727 sessions**, 2,010 visitors from Instagram in one campaign. [2,000 blog visitors audit →](https://www.ootto.ai/blog/2000-blog-visitors-blog-audit)
-- **Over 10,000 leads in a month**, 15 minutes a day, no agency - the seven-step method this repo automates. [How we grew our own Instagram →](https://www.ootto.ai/blog/make-viral-instagram-reels-with-claude)
 
 
 ## Installation
