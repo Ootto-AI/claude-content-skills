@@ -1,7 +1,7 @@
 ---
 name: campaign-brief
 description: >
-  Evidence-led social marketing decision support. Use when a user has real source material and needs a reviewable recommendation. NOT for inventing claims, publishing content, contacting people, buying media, or changing an account.
+  Campaign Brief for evidence-led social marketing. Use when the user says "brief this launch, plan a campaign, or what should this campaign include" and supplies relevant material. NOT for buying media or inventing proof; use paid-social-brief only for planning creative tests.
 user-invokable: true
 argument-hint: "[paste relevant evidence]"
 license: MIT
@@ -11,42 +11,42 @@ metadata:
   category: marketing
 ---
 
-# ucampaign brief
+# Campaign Brief
 
-This skill turns supplied evidence into a reviewable decision. It never assumes platform access, creates unsupported public claims, or acts on an account.
+This skill converts supplied evidence into a reviewable decision. It does not publish, contact people, buy media, alter an account, or turn an assumption into a public claim.
 
-## 1. Establish the evidence
+## 1. Get the right evidence
 
-Ask for the source, date range, audience or campaign context, decision owner, and outcome sought. Name what is missing. Keep direct quotes separate from summaries.
+Ask for the source, its date range, the decision to make, the intended audience, and the relevant offer or campaign. Identify the smallest missing input before continuing.
 
-## 2. Separate fact from interpretation
+## 2. Read what is there
 
-Build three columns: observed evidence, reasonable hypothesis, and unknown. Cite the source behind each recommendation. If evidence conflicts, show the conflict rather than averaging it away.
+Separate observed facts, direct quotes, hypotheses, and unknowns. Cite supplied evidence behind every recommendation. Where sources disagree, preserve the disagreement.
 
-## 3. Produce the working decision
+## 3. Make the decision document
 
-Return the recommendation, its supporting evidence, assumptions, risks, and the smallest next test. Make platform advice specific only to a platform named in the source.
+Return the recommendation, why the evidence supports it, assumptions, risks, and the next smallest test. State exactly what a human must approve before anything becomes public.
 
-## 4. Review before action
+## 4. Hand off cleanly
 
-Flag public claims, customer quotes, creator contact, paid spend, tracking links, and publication for human approval. This skill prepares work; the user approves and executes it.
+Give the output to the next named skill only after the decision and source claims are reviewed. Do not silently turn planning work into execution.
 
 ## Hard rules
 
-- Do not invent metrics, demographics, outcomes, quotes, integrations, or platform access.
-- Do not treat correlation as causation.
-- Keep observations, hypotheses, and recommendations visibly distinct.
-- If evidence is thin, state what is missing and give the smallest collection step.
+- Never invent metrics, demographics, outcomes, quotes, integrations, reach, or platform access.
+- Never present a correlation as causal proof.
+- Keep observed fact, hypothesis, and recommendation visibly separate.
+- If evidence is too thin, say so and request the smallest useful collection step.
 
 ## Failure modes
 
 | Symptom | Cause | Fix |
 |---|---|---|
-| Generic output | no concrete source | request examples, exports, comments, or approved proof |
-| Overconfident claim | assumption presented as fact | label it and propose a test |
-| Risky public language | proof or approval missing | remove it or hold it for review |
-| Wrong job | another method owns it | route to the neighbouring skill |
+| Generic advice | no concrete source material | ask for examples, exports, comments, or approved proof |
+| Overconfident conclusion | assumptions were treated as facts | label assumptions and propose a test |
+| Risky public language | proof or approval is missing | remove it or hold it for review |
+| Wrong workflow | another method owns the next job | route to the neighbouring skill below |
 
 ## Where it sits
 
-This skill sits between evidence collection and an approved campaign decision; use the neighbouring content, distribution, measurement, or partnership skill after the decision is reviewed.
+positioning-audit → campaign-brief → cross-platform-distribution.
