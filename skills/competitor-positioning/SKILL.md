@@ -1,44 +1,45 @@
 ---
 name: competitor-positioning
-description: >
-  Competitor Positioning for evidence-led social marketing. Use when the user says "what are competitors saying, where is white space, or compare our position" and supplies relevant material. NOT for copying competitor language or claiming unverified white space; use social-listening for buyer evidence.
-user-invokable: true
-argument-hint: "[paste relevant evidence]"
-license: MIT
-metadata:
-  author: Ootto
-  version: "1.0.0"
-  category: marketing
+description: Use when you need to compare supplied competitor messaging with your approved product facts and find a credible point of difference. Trigger phrases include "how are competitors positioned?", "compare our message to theirs", "where are we different?", "audit these competitor pages", and "what should we not say?". Do not use this to make unverified claims about competitors, copy their language, or write the final brand message in isolation; use agent-reach to collect public sources, positioning-audit to decide your message, and campaign-brief to apply it.
 ---
+
 # Competitor Positioning
 
-This skill turns supplied evidence into a reviewable decision. It does not publish, contact people, buy media, alter an account, or make an unsupported public claim.
+Compare observable market messages without turning a competitor scan into a claim sheet or imitation exercise.
 
-## 1. Establish the evidence
-Ask for the source, date range, audience, decision owner, and campaign context. Name what is missing before continuing.
+## 1. Define the comparison question
 
-## 2. Sort facts from interpretation
-Keep observed facts, direct quotes, hypotheses, and unknowns separate. Cite the source behind every recommendation and preserve conflicts.
+Ask which customer decision, category, and alternatives matter. Gather dated public pages, posts, pricing, documentation, or approved internal notes. Record source URLs or excerpts and dates. If a source cannot be verified, label it as an unverified lead rather than a fact.
 
-## 3. Produce the working decision
-Return the recommendation, evidence, assumptions, risks, and smallest next test. Flag public claims, quotes, links, spend, and publication for human approval.
+## 2. Separate message from capability
 
-## 4. Hand off after review
-The user approves and executes. Route reviewed output to the next skill rather than silently acting on it.
+For each alternative, map the audience it addresses, problem framing, promise, proof style, price or access signal if public, and visible limitations. Do not assume a marketing claim proves a feature, or that a missing page proves absence of a capability.
+
+## 3. Compare against our real evidence
+
+Map our approved product facts, customer language, proof, constraints, and category choice beside the alternatives. Look for a difference that is relevant to the audience and supported by something we can demonstrate. A useful difference may be a workflow, point of view, fit, or trade-off, not a superiority claim.
+
+## 4. Produce positioning choices and guardrails
+
+Return possible message territories with supporting evidence, risk, and the phrases or claims to avoid. Include the uncertainty that needs verification. Recommend one position to test through positioning-audit or campaign-brief, not a sweeping declaration that the market is settled.
 
 ## Hard rules
-- Never invent metrics, demographics, outcomes, quotes, integrations, reach, or platform access.
-- Never treat correlation as causal proof.
-- Never turn thin evidence into certainty; request the smallest useful collection step.
-- Keep observations, hypotheses, and recommendations visibly distinct.
+
+- Do not state or imply false facts about a competitor's features, pricing, customers, policies, or results.
+- Attribute public observations to their source and date; products and pages change.
+- Never copy distinctive competitor language, structure, or creative expression.
+- Treat absence of evidence as unknown, not as proof a competitor cannot do something.
+- Do not use comparative claims in public copy without legal and product approval.
 
 ## Failure modes
-| Symptom | Cause | Fix |
-|---|---|---|
-| Generic output | no concrete source | request examples, exports, comments, or proof |
-| Overconfidence | assumptions appear as facts | label assumptions and propose a test |
-| Risky copy | proof or approval missing | remove it or hold it for review |
-| Wrong job | another workflow owns it | use the neighbour below |
+
+| Failure | Do this instead |
+| --- | --- |
+| The scan becomes a feature checklist | Compare the customer decision, promise, proof, and trade-offs. |
+| Competitor claims are repeated as facts | Quote or summarize the source as their stated message, with date. |
+| The outcome is "we are better" | Name one relevant, demonstrable difference and its boundary. |
+| The team copies a rival's framing | Return to our evidence and customer language before choosing a position. |
 
 ## Where it sits
-social-listening + social-proof-mining → competitor-positioning → positioning-audit.
+
+Use agent-reach before this skill when public evidence must be gathered. Use audience-personas and social-listening to ensure the comparison matters to real people. Use positioning-audit to choose our message, then campaign-brief and cross-platform-distribution to apply it.

@@ -1,44 +1,45 @@
 ---
 name: paid-social-brief
-description: >
-  Paid Social Brief for evidence-led social marketing. Use when the user says "brief paid social, plan creative testing, or what assets do we need" and supplies relevant material. NOT for buying media, changing an ad account, or promising performance; use campaign-brief first.
-user-invokable: true
-argument-hint: "[paste relevant evidence]"
-license: MIT
-metadata:
-  author: Ootto
-  version: "1.0.0"
-  category: marketing
+description: Use when an approved social campaign needs a media-ready brief for paid distribution, creative testing, and measurement. Trigger phrases include "brief paid social", "plan this ad test", "turn this campaign into paid", "what should we test in ads?", and "make a Meta or LinkedIn ad brief". Do not use this to claim ad-account access, launch spend, bypass platform policy, or invent targeting capabilities; use campaign-brief for the source strategy, utm-campaign-plan for tracking conventions, and social-analytics-report for results interpretation.
 ---
+
 # Paid Social Brief
 
-This skill turns supplied evidence into a reviewable decision. It does not publish, contact people, buy media, alter an account, or make an unsupported public claim.
+Translate an approved campaign into testable paid-social decisions without pretending media execution or platform access exists.
 
-## 1. Establish the evidence
-Ask for the source, date range, audience, decision owner, and campaign context. Name what is missing before continuing.
+## 1. Confirm the approved foundation
 
-## 2. Sort facts from interpretation
-Keep observed facts, direct quotes, hypotheses, and unknowns separate. Cite the source behind every recommendation and preserve conflicts.
+Ask for the campaign objective, offer, claim boundary, landing destination, proof, audience evidence, budget range if supplied, policy constraints, and the owner who can actually configure the platform. If the offer or landing page is unapproved, do not write ads around it.
 
-## 3. Produce the working decision
-Return the recommendation, evidence, assumptions, risks, and smallest next test. Flag public claims, quotes, links, spend, and publication for human approval.
+## 2. Define the test, not a prediction
 
-## 4. Hand off after review
-The user approves and executes. Route reviewed output to the next skill rather than silently acting on it.
+State the hypothesis, audience context, creative angle, desired action, measurement event, and what would count as useful learning. Separate audience hypotheses from targeting settings because platform availability and policy can change. Keep the number of simultaneous variables small enough to interpret.
+
+## 3. Specify creative and destination requirements
+
+List the approved message variants, proof assets, disclosures, format needs, destination expectation, exclusions, and prohibited claims. Tie each creative to a hypothesis. Note where a native platform review or legal approval is required rather than claiming it is complete.
+
+## 4. Set guardrails for operation and review
+
+Provide the budget and pacing decisions only when supplied by an authorised owner; otherwise mark them open. Define launch checks, reporting window, stop or revise conditions, and the exact data needed for a review. Ensure tracked links follow the agreed UTM plan.
 
 ## Hard rules
-- Never invent metrics, demographics, outcomes, quotes, integrations, reach, or platform access.
-- Never treat correlation as causal proof.
-- Never turn thin evidence into certainty; request the smallest useful collection step.
-- Keep observations, hypotheses, and recommendations visibly distinct.
+
+- Do not claim access to ad accounts, audiences, pixels, spend, or platform features you do not have.
+- Never target or exclude sensitive groups in a way that violates law, policy, or the approved brief.
+- Do not use unsubstantiated performance, health, financial, or customer-result claims.
+- Do not optimize solely for cheap clicks when the campaign's intended action is elsewhere.
+- Keep organic and paid results labelled separately in every report.
 
 ## Failure modes
-| Symptom | Cause | Fix |
-|---|---|---|
-| Generic output | no concrete source | request examples, exports, comments, or proof |
-| Overconfidence | assumptions appear as facts | label assumptions and propose a test |
-| Risky copy | proof or approval missing | remove it or hold it for review |
-| Wrong job | another workflow owns it | use the neighbour below |
+
+| Failure | Do this instead |
+| --- | --- |
+| A media brief is only ad copy | Define the hypothesis, audience context, measurement, and decision threshold. |
+| Too many variables change at once | Limit the first test to the few variables needed to answer one question. |
+| Creative promises more than the destination delivers | Align every claim with the approved landing experience and proof. |
+| Results cannot be attributed | Create the UTM and measurement plan before launch. |
 
 ## Where it sits
-campaign-brief → paid-social-brief → social-analytics-report.
+
+Use campaign-brief and positioning-audit before this skill. Use utm-campaign-plan to make link naming consistent and cross-platform-distribution to distinguish paid from owned work. Use social-analytics-report for operating decisions and launch-retrospective for the full review.
