@@ -1,44 +1,45 @@
 ---
 name: community-engagement-plan
-description: >
-  Community Engagement Plan for evidence-led social marketing. Use when the user says "where should we engage, plan community marketing, or participate without spamming" and supplies relevant material. NOT for automating unsolicited replies, impersonating people, or harvesting private data.
-user-invokable: true
-argument-hint: "[paste relevant evidence]"
-license: MIT
-metadata:
-  author: Ootto
-  version: "1.0.0"
-  category: marketing
+description: Use when a team needs a deliberate, human-led plan for participating in comments, communities, or audience conversations around an approved topic. Trigger phrases include "plan community engagement", "how should we join this conversation?", "what should we reply to?", "make an engagement playbook", and "how do we support this community?". Do not use this to automate unsolicited replies, manipulate conversations, impersonate people, or create comment copy at scale; use comment-responder for a specific approved reply and social-listening to analyse recurring themes.
 ---
+
 # Community Engagement Plan
 
-This skill turns supplied evidence into a reviewable decision. It does not publish, contact people, buy media, alter an account, or make unsupported claims.
+Set a useful participation standard: where the team can add value, what it can truthfully say, and when it should not speak.
 
-## 1. Establish the evidence
-Ask for source, date range, audience, decision owner, and campaign context. Name missing material before proceeding.
+## 1. Define the community and permission boundary
 
-## 2. Separate fact from interpretation
-Keep observed facts, direct quotes, hypotheses, and unknowns separate. Cite evidence behind every recommendation and preserve conflicts.
+Ask which owned or external community is in scope, its rules, the team's legitimate role, the topic, and any moderator or brand constraints. Read supplied rules before proposing interaction. If the community does not welcome promotion or brand participation, do not design a workaround.
 
-## 3. Produce the decision
-Return recommendation, evidence, assumptions, risks, and smallest next test. Flag public claims, quotes, links, spend, and publication for human approval.
+## 2. Identify contribution opportunities
 
-## 4. Hand off deliberately
-The user approves and executes. Route reviewed output to the next skill rather than silently acting.
+Use real questions, recurring friction, useful resources, corrections, and support needs as evidence. Classify participation as answer, clarification, acknowledgement, escalation, or observation. Give priority to helping people complete a task, not inserting the brand into every thread.
+
+## 3. Establish response boundaries and routing
+
+Define approved facts, prohibited claims, tone, disclosure, escalation owners, response windows, and cases that require silence or human review. Route product bugs, safety concerns, account-specific issues, legal questions, and hostile interactions to the appropriate owner rather than improvising publicly.
+
+## 4. Run a light learning loop
+
+Set a small cadence to review unanswered questions, recurring themes, and useful contributions. Capture aggregate learning for social-listening. Measure quality through resolved questions, informed feedback, and community trust signals where available, not reply volume alone.
 
 ## Hard rules
-- Never invent metrics, demographics, outcomes, quotes, integrations, reach, or platform access.
-- Never treat correlation as causal proof.
-- If evidence is thin, request the smallest useful collection step.
-- Keep observation, hypothesis, and recommendation visibly distinct.
+
+- Never automate unsolicited replies, direct messages, follows, or engagement.
+- Do not misrepresent an employee, customer, or independent community member.
+- Follow each community's rules and moderator direction; leave when asked.
+- Do not reveal private account, customer, or support information in public conversation.
+- Avoid argumentative pile-ons, engagement bait, and opportunistic promotion during sensitive events.
 
 ## Failure modes
-| Symptom | Cause | Fix |
-|---|---|---|
-| Generic output | no concrete source | request examples, exports, comments, or proof |
-| Overconfidence | assumptions presented as facts | label assumptions and propose a test |
-| Risky copy | proof or approval missing | remove it or hold it for review |
-| Wrong job | another workflow owns it | use the neighbour below |
+
+| Failure | Do this instead |
+| --- | --- |
+| The plan is "reply to everything" | Define situations where the team can add real value and where it should observe. |
+| A public reply attempts to solve a private account issue | Acknowledge the issue and route through the approved support path. |
+| Replies become repetitive promotion | Lead with the user's question, resource, or correction rather than the product. |
+| Community rules are discovered after posting | Review rules and obtain required permission before engaging. |
 
 ## Where it sits
-social-listening → community-engagement-plan → campaign-brief.
+
+Use social-listening to identify recurring questions and comment-responder for a particular reply. Use campaign-brief only when a campaign has a legitimate community role. Feed patterns into audience-personas and positioning-audit; never treat a community plan as a mass-outreach mechanism.
