@@ -1,44 +1,45 @@
 ---
 name: creator-outreach
-description: >
-  Creator Outreach for evidence-led social marketing. Use when the user says "write creator outreach, pitch this partnership, or contact this creator" and supplies relevant material. NOT for bulk outreach, fabricated familiarity, or negotiating terms; use influencer-partnerships first.
-user-invokable: true
-argument-hint: "[paste relevant evidence]"
-license: MIT
-metadata:
-  author: Ootto
-  version: "1.0.0"
-  category: marketing
+description: Use when a specific creator has been selected and you need a concise, personal, permission-respecting first contact about a relevant collaboration. Trigger phrases include "write outreach to this creator", "contact these partners", "make a creator pitch", "how should I ask this creator?", and "follow up on this collaboration". Do not use this for mass cold outreach, automated DMs, undisclosed affiliate offers, or creator selection; use influencer-partnerships to assess fit and campaign-brief to establish the offer first.
 ---
+
 # Creator Outreach
 
-This skill turns supplied evidence into a reviewable decision; it never publishes, contacts people, buys media, alters an account, or makes unsupported claims.
+Write outreach that proves the operator has done the work: it is relevant to the creator, clear about the ask, and easy to decline.
 
-## 1. Get the right evidence
-Ask for source, date range, decision, audience, and campaign context. Name missing material before proceeding.
+## 1. Confirm permission and fit
 
-## 2. Separate evidence from interpretation
-Keep observed facts, direct quotes, hypotheses, and unknowns distinct. Cite supplied evidence behind every recommendation and preserve conflicts.
+Record the creator's supplied or public business contact route, the reason the collaboration is relevant, the approved offer, and the required disclosure or compensation terms. Do not contact a creator merely because they are in a large list. If the relationship is not mutually useful, stop before drafting.
 
-## 3. Make the working output
-Return a recommendation, support, assumptions, risks, and the next smallest test. Flag anything that needs human approval before public use.
+## 2. Find one honest personalisation point
 
-## 4. Hand off deliberately
-Do not silently execute. Give the reviewed output to the next named skill only after a human approves the decision.
+Use a specific, recent piece of work or audience need that the operator can accurately name. Explain the connection in one sentence without flattery theatre or invented familiarity. Never imply that the creator uses the product, knows the team, or endorsed anything.
+
+## 3. Make the ask inspectable
+
+State what the collaboration could involve, the creative latitude, compensation or consideration where approved, timeline, disclosure expectation, and the smallest next step. Link only to material the creator needs to evaluate the proposal. Make a no-pressure decline simple.
+
+## 4. Follow up with restraint
+
+Record the outreach date and one reasonable follow-up point. If there is no response, do not escalate through other personal channels, pressure the creator, or treat silence as consent. Update the partnership record with a factual outcome so future outreach does not repeat unwanted contact.
 
 ## Hard rules
-- Do not invent metrics, demographics, outcomes, quotes, integrations, reach, or platform access.
-- Do not treat correlation as causal proof.
-- If evidence is thin, say what is missing and request the smallest collection step.
-- Keep public claims, creator contact, paid spend, links, and publication for human approval.
+
+- Never automate unsolicited replies, DMs, or follow-ups.
+- Do not misrepresent the sender, relationship, compensation, product access, or urgency.
+- Use only appropriate contact details supplied for business contact or already approved by the operator.
+- Do not promise results, creative approval, or payment terms that are not authorised.
+- Include required sponsorship, gifted, affiliate, or material-connection disclosures in the later brief, not as a hidden condition.
 
 ## Failure modes
-| Symptom | Cause | Fix |
-|---|---|---|
-| Generic advice | no concrete evidence | request examples, exports, comments, or proof |
-| Overconfident output | assumptions treated as facts | label assumptions and propose a test |
-| Risky public language | proof or approval missing | remove it or hold it for review |
-| Wrong workflow | another method owns it | route to the neighbour below |
+
+| Failure | Do this instead |
+| --- | --- |
+| The message could be sent to anyone | Add one verifiable relevance point or do not send it. |
+| The ask hides the commercial terms | State the available terms clearly or say they are still being scoped. |
+| Follow-up becomes harassment | Set one follow-up and close the record after no response. |
+| Outreach starts before partnership fit | Return to influencer-partnerships and evaluate the collaboration first. |
 
 ## Where it sits
-influencer-partnerships → creator-outreach → launch-retrospective.
+
+Use influencer-partnerships to decide whether and how to approach a creator. Use campaign-brief for the approved campaign facts and utm-campaign-plan for any attributable link. Use launch-retrospective to learn from completed collaborations, never from private creator data outside the agreed purpose.
