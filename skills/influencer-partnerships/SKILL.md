@@ -1,7 +1,7 @@
 ---
 name: influencer-partnerships
 description: >
-  Evidence-led social marketing decision support. Use when a user has real source material and needs a reviewable recommendation. NOT for inventing claims, publishing content, contacting people, buying media, or changing an account.
+  Influencer Partnerships for evidence-led social marketing. Use when the user says "which creators fit, score these influencers, or plan a creator activation" and supplies relevant material. NOT for estimating reach, fees, or performance without data; use creator-outreach after qualification.
 user-invokable: true
 argument-hint: "[paste relevant evidence]"
 license: MIT
@@ -10,43 +10,35 @@ metadata:
   version: "1.0.0"
   category: marketing
 ---
+# Influencer Partnerships
 
-# uinfluencer partnerships
+This skill turns supplied evidence into a reviewable decision; it never publishes, contacts people, buys media, alters an account, or makes unsupported claims.
 
-This skill turns supplied evidence into a reviewable decision. It never assumes platform access, creates unsupported public claims, or acts on an account.
+## 1. Get the right evidence
+Ask for source, date range, decision, audience, and campaign context. Name missing material before proceeding.
 
-## 1. Establish the evidence
+## 2. Separate evidence from interpretation
+Keep observed facts, direct quotes, hypotheses, and unknowns distinct. Cite supplied evidence behind every recommendation and preserve conflicts.
 
-Ask for the source, date range, audience or campaign context, decision owner, and outcome sought. Name what is missing. Keep direct quotes separate from summaries.
+## 3. Make the working output
+Return a recommendation, support, assumptions, risks, and the next smallest test. Flag anything that needs human approval before public use.
 
-## 2. Separate fact from interpretation
-
-Build three columns: observed evidence, reasonable hypothesis, and unknown. Cite the source behind each recommendation. If evidence conflicts, show the conflict rather than averaging it away.
-
-## 3. Produce the working decision
-
-Return the recommendation, its supporting evidence, assumptions, risks, and the smallest next test. Make platform advice specific only to a platform named in the source.
-
-## 4. Review before action
-
-Flag public claims, customer quotes, creator contact, paid spend, tracking links, and publication for human approval. This skill prepares work; the user approves and executes it.
+## 4. Hand off deliberately
+Do not silently execute. Give the reviewed output to the next named skill only after a human approves the decision.
 
 ## Hard rules
-
-- Do not invent metrics, demographics, outcomes, quotes, integrations, or platform access.
-- Do not treat correlation as causation.
-- Keep observations, hypotheses, and recommendations visibly distinct.
-- If evidence is thin, state what is missing and give the smallest collection step.
+- Do not invent metrics, demographics, outcomes, quotes, integrations, reach, or platform access.
+- Do not treat correlation as causal proof.
+- If evidence is thin, say what is missing and request the smallest collection step.
+- Keep public claims, creator contact, paid spend, links, and publication for human approval.
 
 ## Failure modes
-
 | Symptom | Cause | Fix |
 |---|---|---|
-| Generic output | no concrete source | request examples, exports, comments, or approved proof |
-| Overconfident claim | assumption presented as fact | label it and propose a test |
+| Generic advice | no concrete evidence | request examples, exports, comments, or proof |
+| Overconfident output | assumptions treated as facts | label assumptions and propose a test |
 | Risky public language | proof or approval missing | remove it or hold it for review |
-| Wrong job | another method owns it | route to the neighbouring skill |
+| Wrong workflow | another method owns it | route to the neighbour below |
 
 ## Where it sits
-
-This skill sits between evidence collection and an approved campaign decision; use the neighbouring content, distribution, measurement, or partnership skill after the decision is reviewed.
+campaign-brief → influencer-partnerships → creator-outreach.
