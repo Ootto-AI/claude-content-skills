@@ -1,44 +1,45 @@
 ---
 name: influencer-partnerships
-description: >
-  Influencer Partnerships for evidence-led social marketing. Use when the user says "which creators fit, score these influencers, or plan a creator activation" and supplies relevant material. NOT for estimating reach, fees, or performance without data; use creator-outreach after qualification.
-user-invokable: true
-argument-hint: "[paste relevant evidence]"
-license: MIT
-metadata:
-  author: Ootto
-  version: "1.0.0"
-  category: marketing
+description: Use when you need to decide whether a creator partnership is appropriate and prepare a truthful, mutually useful collaboration brief. Trigger phrases include "should we work with this creator?", "evaluate these influencers", "make a creator partnership brief", "how do we structure this collaboration?", and "what should a partner post?". Do not use this to buy followers, conceal sponsorship, automate outreach, or invent a creator's audience fit; use creator-outreach for personalised contact and campaign-brief for the underlying campaign.
 ---
+
 # Influencer Partnerships
 
-This skill turns supplied evidence into a reviewable decision; it never publishes, contacts people, buys media, alters an account, or makes unsupported claims.
+Evaluate and structure creator collaborations around real audience fit, transparent terms, and claims both sides can defend.
 
-## 1. Get the right evidence
-Ask for source, date range, decision, audience, and campaign context. Name missing material before proceeding.
+## 1. Define the partnership job
 
-## 2. Separate evidence from interpretation
-Keep observed facts, direct quotes, hypotheses, and unknowns distinct. Cite supplied evidence behind every recommendation and preserve conflicts.
+Start with the campaign objective, audience situation, approved offer, proof, budget or compensation constraints, timing, and the role a creator could credibly play. A creator is not automatically a distribution channel; state what their audience gains from the collaboration.
 
-## 3. Make the working output
-Return a recommendation, support, assumptions, risks, and the next smallest test. Flag anything that needs human approval before public use.
+## 2. Assess fit from supplied evidence
 
-## 4. Hand off deliberately
-Do not silently execute. Give the reviewed output to the next named skill only after a human approves the decision.
+Review only evidence provided or publicly verified by the operator: recent work, audience conversation quality, topic relevance, format strength, brand conflicts, and disclosure norms. Separate observable fit from assumptions. If audience data is unavailable, record that as an uncertainty rather than inventing a reach forecast.
+
+## 3. Build a creator-respecting brief
+
+Share the non-negotiable facts, claim boundaries, required disclosures, deliverables, timing, rights, review process, compensation terms, and a clear creative latitude zone. Explain the audience problem to solve, not a script to recite. Identify what the creator must not imply.
+
+## 4. Agree on measurement and learning
+
+Define what success means, the approved tracking method, the reporting window, and who owns follow-up. Review work against the agreed brief, not taste alone. Capture learning about fit, message, and format for future partnerships without ranking creators by a single vanity metric.
 
 ## Hard rules
-- Do not invent metrics, demographics, outcomes, quotes, integrations, reach, or platform access.
-- Do not treat correlation as causal proof.
-- If evidence is thin, say what is missing and request the smallest collection step.
-- Keep public claims, creator contact, paid spend, links, and publication for human approval.
+
+- Never conceal paid, gifted, affiliate, or other material relationships; follow applicable disclosure requirements.
+- Do not claim audience demographics, reach, or conversion without supplied evidence.
+- Do not require a creator to make unsupported product or performance claims.
+- Respect creator terms, usage rights, exclusivity, and consent before reusing material.
+- Never pressure creators or their audiences into unsolicited contact or deceptive engagement.
 
 ## Failure modes
-| Symptom | Cause | Fix |
-|---|---|---|
-| Generic advice | no concrete evidence | request examples, exports, comments, or proof |
-| Overconfident output | assumptions treated as facts | label assumptions and propose a test |
-| Risky public language | proof or approval missing | remove it or hold it for review |
-| Wrong workflow | another method owns it | route to the neighbour below |
+
+| Failure | Do this instead |
+| --- | --- |
+| Selection is based only on follower count | Evaluate topical fit, audience conversation, format, and evidence quality. |
+| The brief removes the creator's voice | State truth boundaries and desired outcome, then leave creative room. |
+| A partnership is treated as a guaranteed sales channel | Define a test and learning goal, not an invented return. |
+| Disclosure is an afterthought | Put required disclosure and approval expectations in the brief from the start. |
 
 ## Where it sits
-campaign-brief → influencer-partnerships → creator-outreach.
+
+Use campaign-brief before this skill. Use creator-outreach to contact a selected creator with a relevant, personalised note. Use social-proof-mining for approved proof and utm-campaign-plan for attributable links. Use launch-retrospective to decide what to repeat.

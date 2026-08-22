@@ -1,44 +1,45 @@
 ---
 name: linkedin-thought-leadership
-description: >
-  LinkedIn Thought Leadership for evidence-led social marketing. Use when the user says "write a LinkedIn post, develop our point of view, or turn this lesson into thought leadership" and supplies relevant material. NOT for inventing expertise or customer outcomes; use social-proof-mining for approved evidence.
-user-invokable: true
-argument-hint: "[paste relevant evidence]"
-license: MIT
-metadata:
-  author: Ootto
-  version: "1.0.0"
-  category: marketing
+description: Use when a founder, operator, or subject-matter expert needs a credible LinkedIn point of view based on work they can genuinely explain. Trigger phrases include "turn this lesson into a LinkedIn post", "what should I say on LinkedIn?", "build a founder point of view", "make this insight useful for buyers", and "plan a LinkedIn series". Do not use this to fabricate personal experience, create generic motivational posts, or run paid LinkedIn ads; use social-proof-mining for approved proof, campaign-brief for a launch message, and paid-social-brief for media.
 ---
+
 # LinkedIn Thought Leadership
 
-This skill turns supplied evidence into a reviewable decision; it never publishes, contacts people, buys media, alters an account, or makes unsupported claims.
+Turn real operating experience into a clear, useful perspective that earns attention without pretending expertise the author does not have.
 
-## 1. Get the right evidence
-Ask for source, date range, decision, audience, and campaign context. Name missing material before proceeding.
+## 1. Establish the author's right to say it
 
-## 2. Separate evidence from interpretation
-Keep observed facts, direct quotes, hypotheses, and unknowns distinct. Cite supplied evidence behind every recommendation and preserve conflicts.
+Ask what the author directly observed, built, tested, changed, or learned; who the post is for; and what evidence can be shown. Separate firsthand experience from a secondhand opinion. If the author cannot stand behind the claim, frame it as a question or choose a different source.
 
-## 3. Make the working output
-Return a recommendation, support, assumptions, risks, and the next smallest test. Flag anything that needs human approval before public use.
+## 2. Find one teachable tension
 
-## 4. Hand off deliberately
-Do not silently execute. Give the reviewed output to the next named skill only after a human approves the decision.
+Choose one costly misconception, surprising trade-off, operating decision, or lesson from the evidence. Explain why a reader in a similar situation should care now. The point is not to sound definitive; it is to give a useful way to make a decision.
+
+## 3. Build the post around proof
+
+Use a concrete situation, the decision made, the reasoning, the outcome or uncertainty, and the takeaway. Keep the opening specific enough to filter for the right reader. Add an example, process, or limitation when it makes the lesson more credible.
+
+## 4. Design the conversation and follow-through
+
+End with a question only if the author can meaningfully engage with answers. Otherwise use a modest action: save the framework, compare notes, or see the approved resource. Suggest comments the author can add from real context, and specify how to learn from responses rather than chasing impressions alone.
 
 ## Hard rules
-- Do not invent metrics, demographics, outcomes, quotes, integrations, reach, or platform access.
-- Do not treat correlation as causal proof.
-- If evidence is thin, say what is missing and request the smallest collection step.
-- Keep public claims, creator contact, paid spend, links, and publication for human approval.
+
+- Do not invent founder stories, customer outcomes, job titles, or operating facts.
+- Avoid borrowed certainty: name limits, context, and trade-offs when they matter.
+- Never use engagement bait that asks for comments without a useful conversation.
+- Keep promotional claims secondary to the lesson and within approved proof.
+- Write in the author's actual level of authority, not a universal voice.
 
 ## Failure modes
-| Symptom | Cause | Fix |
-|---|---|---|
-| Generic advice | no concrete evidence | request examples, exports, comments, or proof |
-| Overconfident output | assumptions treated as facts | label assumptions and propose a test |
-| Risky public language | proof or approval missing | remove it or hold it for review |
-| Wrong workflow | another method owns it | route to the neighbour below |
+
+| Failure | Do this instead |
+| --- | --- |
+| The post is an abstract maxim | Lead with a real decision or observed tension. |
+| The insight becomes a disguised product pitch | Teach the lesson first and use only an approved, relevant next step. |
+| The author cannot defend every sentence | Remove the claim or qualify it with the real evidence. |
+| Comments become a vanity loop | Ask a specific question and capture recurring answers for social-listening. |
 
 ## Where it sits
-social-proof-mining → linkedin-thought-leadership → cross-platform-distribution.
+
+Use social-listening and positioning-audit to find credible themes. Use social-proof-mining when a proof point requires approval. Use campaign-brief for launch communications and cross-platform-distribution when the LinkedIn post has a role in a broader plan.

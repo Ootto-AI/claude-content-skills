@@ -1,44 +1,45 @@
 ---
 name: x-thread-strategy
-description: >
-  X Thread Strategy for evidence-led social marketing. Use when the user says "turn this into a thread, plan an X thread, or structure this launch lesson" and supplies relevant material. NOT for breaking-news research or unsupported hot takes; use agent-reach for current research.
-user-invokable: true
-argument-hint: "[paste relevant evidence]"
-license: MIT
-metadata:
-  author: Ootto
-  version: "1.0.0"
-  category: marketing
+description: Use when a real lesson, analysis, launch explanation, or resource needs a structured X thread rather than a single post. Trigger phrases include "make this an X thread", "outline a thread", "break this down for X", "turn this research into a thread", and "what is the thread angle?". Do not use this to manufacture hot takes, publish unverified breaking news, or create a long-form blog post; use content-research for the source material, campaign-brief for a coordinated launch, and linkedin-thought-leadership for a LinkedIn-native argument.
 ---
+
 # X Thread Strategy
 
-This skill turns supplied evidence into a reviewable decision; it never publishes, contacts people, buys media, alters an account, or makes unsupported claims.
+Build a thread that rewards a reader for continuing: one defensible point, a clear sequence, and evidence they can evaluate.
 
-## 1. Get the right evidence
-Ask for source, date range, decision, audience, and campaign context. Name missing material before proceeding.
+## 1. Choose the thread-worthy claim
 
-## 2. Separate evidence from interpretation
-Keep observed facts, direct quotes, hypotheses, and unknowns distinct. Cite supplied evidence behind every recommendation and preserve conflicts.
+Ask for the source material, the audience's immediate question, the claim that can be defended, and what the reader should do with it. A thread needs progression: a process, comparison, analysis, or lesson with several necessary steps. If one post can carry it, do not inflate it.
 
-## 3. Make the working output
-Return a recommendation, support, assumptions, risks, and the next smallest test. Flag anything that needs human approval before public use.
+## 2. Create the argument spine
 
-## 4. Hand off deliberately
-Do not silently execute. Give the reviewed output to the next named skill only after a human approves the decision.
+Write the opening claim, why it matters, the sequence of evidence or steps, the limitation, and the ending action. Each post must move the reader forward; eliminate setup that merely repeats the hook. Keep links, screenshots, and examples attached to the exact claim they support.
+
+## 3. Make each post independently legible
+
+Use direct language, one idea per post, and enough context that a quote-post does not distort the point. Put caveats near the claim they qualify. If a post depends on data, name the source and date rather than implying current truth.
+
+## 4. Publish with an evidence loop
+
+Plan the first reply only when it adds a useful resource, correction policy, or data source. Track saves, qualified replies, and link outcomes appropriate to the campaign rather than treating impressions as proof. Feed recurring confusion back to social-listening or revise the next thread.
 
 ## Hard rules
-- Do not invent metrics, demographics, outcomes, quotes, integrations, reach, or platform access.
-- Do not treat correlation as causal proof.
-- If evidence is thin, say what is missing and request the smallest collection step.
-- Keep public claims, creator contact, paid spend, links, and publication for human approval.
+
+- Do not invent data, quotes, experiments, screenshots, or access to a platform.
+- Never split a weak idea into a thread to simulate substance.
+- Do not promise a result the source cannot support.
+- Avoid engagement bait, pile-ons, and commentary on individuals without verifiable context.
+- Preserve disclosure and attribution for partner, customer, or sponsored material.
 
 ## Failure modes
-| Symptom | Cause | Fix |
-|---|---|---|
-| Generic advice | no concrete evidence | request examples, exports, comments, or proof |
-| Overconfident output | assumptions treated as facts | label assumptions and propose a test |
-| Risky public language | proof or approval missing | remove it or hold it for review |
-| Wrong workflow | another method owns it | route to the neighbour below |
+
+| Failure | Do this instead |
+| --- | --- |
+| The thread repeats its hook ten times | Give every post a distinct evidentiary or instructional job. |
+| Context disappears in quote-posts | Include a precise claim and caveat in each standalone post. |
+| The thread chases a fast-moving event | Verify the source and timestamp or leave it as a question, not a fact. |
+| The ending is a forced CTA | Close with the one useful next action the evidence supports. |
 
 ## Where it sits
-agent-reach → x-thread-strategy → cross-platform-distribution.
+
+Use content-research, social-listening, or campaign-brief to supply an approved source. Use cross-platform-distribution to define X's role within a wider plan. Use social-analytics-report to review outcomes and content-repurposer only after the original thread has a clear lesson worth adapting.
