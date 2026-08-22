@@ -1,7 +1,7 @@
 ---
 name: social-proof-mining
 description: >
-  Evidence-led social marketing decision support. Use when a user has real source material and needs a reviewable recommendation. NOT for inventing claims, publishing content, contacting people, buying media, or changing an account.
+  Social Proof Mining for evidence-led social marketing. Use when the user says "find testimonials, mine these reviews, or what proof can we use" and supplies relevant material. NOT for inventing testimonials, metrics, or permission; use positioning-audit after evidence is approved.
 user-invokable: true
 argument-hint: "[paste relevant evidence]"
 license: MIT
@@ -10,43 +10,35 @@ metadata:
   version: "1.0.0"
   category: marketing
 ---
+# Social Proof Mining
 
-# usocial proof mining
-
-This skill turns supplied evidence into a reviewable decision. It never assumes platform access, creates unsupported public claims, or acts on an account.
+This skill turns supplied evidence into a reviewable decision. It does not publish, contact people, buy media, alter an account, or make an unsupported public claim.
 
 ## 1. Establish the evidence
+Ask for the source, date range, audience, decision owner, and campaign context. Name what is missing before continuing.
 
-Ask for the source, date range, audience or campaign context, decision owner, and outcome sought. Name what is missing. Keep direct quotes separate from summaries.
-
-## 2. Separate fact from interpretation
-
-Build three columns: observed evidence, reasonable hypothesis, and unknown. Cite the source behind each recommendation. If evidence conflicts, show the conflict rather than averaging it away.
+## 2. Sort facts from interpretation
+Keep observed facts, direct quotes, hypotheses, and unknowns separate. Cite the source behind every recommendation and preserve conflicts.
 
 ## 3. Produce the working decision
+Return the recommendation, evidence, assumptions, risks, and smallest next test. Flag public claims, quotes, links, spend, and publication for human approval.
 
-Return the recommendation, its supporting evidence, assumptions, risks, and the smallest next test. Make platform advice specific only to a platform named in the source.
-
-## 4. Review before action
-
-Flag public claims, customer quotes, creator contact, paid spend, tracking links, and publication for human approval. This skill prepares work; the user approves and executes it.
+## 4. Hand off after review
+The user approves and executes. Route reviewed output to the next skill rather than silently acting on it.
 
 ## Hard rules
-
-- Do not invent metrics, demographics, outcomes, quotes, integrations, or platform access.
-- Do not treat correlation as causation.
+- Never invent metrics, demographics, outcomes, quotes, integrations, reach, or platform access.
+- Never treat correlation as causal proof.
+- Never turn thin evidence into certainty; request the smallest useful collection step.
 - Keep observations, hypotheses, and recommendations visibly distinct.
-- If evidence is thin, state what is missing and give the smallest collection step.
 
 ## Failure modes
-
 | Symptom | Cause | Fix |
 |---|---|---|
-| Generic output | no concrete source | request examples, exports, comments, or approved proof |
-| Overconfident claim | assumption presented as fact | label it and propose a test |
-| Risky public language | proof or approval missing | remove it or hold it for review |
-| Wrong job | another method owns it | route to the neighbouring skill |
+| Generic output | no concrete source | request examples, exports, comments, or proof |
+| Overconfidence | assumptions appear as facts | label assumptions and propose a test |
+| Risky copy | proof or approval missing | remove it or hold it for review |
+| Wrong job | another workflow owns it | use the neighbour below |
 
 ## Where it sits
-
-This skill sits between evidence collection and an approved campaign decision; use the neighbouring content, distribution, measurement, or partnership skill after the decision is reviewed.
+social-proof-mining → positioning-audit → campaign-brief.
