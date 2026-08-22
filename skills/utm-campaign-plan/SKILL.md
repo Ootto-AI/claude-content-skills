@@ -1,7 +1,7 @@
 ---
 name: utm-campaign-plan
 description: >
-  Evidence-led social marketing decision support. Use when a user has real source material and needs a reviewable recommendation. NOT for inventing claims, publishing content, contacting people, buying media, or changing an account.
+  UTM Campaign Plan for evidence-led social marketing. Use when the user says "make UTM links, name this campaign, or set tracking conventions" and supplies relevant material. NOT for inventing destinations or claiming analytics access; use campaign-brief first.
 user-invokable: true
 argument-hint: "[paste relevant evidence]"
 license: MIT
@@ -10,43 +10,35 @@ metadata:
   version: "1.0.0"
   category: marketing
 ---
+# UTM Campaign Plan
 
-# uutm campaign plan
-
-This skill turns supplied evidence into a reviewable decision. It never assumes platform access, creates unsupported public claims, or acts on an account.
+This skill turns supplied evidence into a reviewable decision. It does not publish, contact people, buy media, alter an account, or make unsupported claims.
 
 ## 1. Establish the evidence
-
-Ask for the source, date range, audience or campaign context, decision owner, and outcome sought. Name what is missing. Keep direct quotes separate from summaries.
+Ask for source, date range, audience, decision owner, and campaign context. Name missing material before proceeding.
 
 ## 2. Separate fact from interpretation
+Keep observed facts, direct quotes, hypotheses, and unknowns separate. Cite evidence behind every recommendation and preserve conflicts.
 
-Build three columns: observed evidence, reasonable hypothesis, and unknown. Cite the source behind each recommendation. If evidence conflicts, show the conflict rather than averaging it away.
+## 3. Produce the decision
+Return recommendation, evidence, assumptions, risks, and smallest next test. Flag public claims, quotes, links, spend, and publication for human approval.
 
-## 3. Produce the working decision
-
-Return the recommendation, its supporting evidence, assumptions, risks, and the smallest next test. Make platform advice specific only to a platform named in the source.
-
-## 4. Review before action
-
-Flag public claims, customer quotes, creator contact, paid spend, tracking links, and publication for human approval. This skill prepares work; the user approves and executes it.
+## 4. Hand off deliberately
+The user approves and executes. Route reviewed output to the next skill rather than silently acting.
 
 ## Hard rules
-
-- Do not invent metrics, demographics, outcomes, quotes, integrations, or platform access.
-- Do not treat correlation as causation.
-- Keep observations, hypotheses, and recommendations visibly distinct.
-- If evidence is thin, state what is missing and give the smallest collection step.
+- Never invent metrics, demographics, outcomes, quotes, integrations, reach, or platform access.
+- Never treat correlation as causal proof.
+- If evidence is thin, request the smallest useful collection step.
+- Keep observation, hypothesis, and recommendation visibly distinct.
 
 ## Failure modes
-
 | Symptom | Cause | Fix |
 |---|---|---|
-| Generic output | no concrete source | request examples, exports, comments, or approved proof |
-| Overconfident claim | assumption presented as fact | label it and propose a test |
-| Risky public language | proof or approval missing | remove it or hold it for review |
-| Wrong job | another method owns it | route to the neighbouring skill |
+| Generic output | no concrete source | request examples, exports, comments, or proof |
+| Overconfidence | assumptions presented as facts | label assumptions and propose a test |
+| Risky copy | proof or approval missing | remove it or hold it for review |
+| Wrong job | another workflow owns it | use the neighbour below |
 
 ## Where it sits
-
-This skill sits between evidence collection and an approved campaign decision; use the neighbouring content, distribution, measurement, or partnership skill after the decision is reviewed.
+campaign-brief → utm-campaign-plan → social-analytics-report.
