@@ -1,9 +1,12 @@
 ---
 name: positioning-audit
 description: >
-  Positioning Audit for evidence-led social marketing. Use when the user says "audit our positioning, review our profile, or why do we sound like everyone else" and supplies relevant material. NOT for inventing a brand identity from intuition; use audience-personas and social-proof-mining first.
+  Audit a brand's social positioning from its profile, offer, customer proof, and competitor material.
+  Use when the user says "audit our positioning", "review our profile", "why do we sound like everyone else",
+  or "what should our social message be". NOT for inventing a new identity from intuition or writing a post;
+  use audience-personas and social-proof-mining first, then hand approved positioning to the content skills.
 user-invokable: true
-argument-hint: "[paste relevant evidence]"
+argument-hint: "[profile, offer, proof, and competitor material]"
 license: MIT
 metadata:
   author: Ootto
@@ -13,40 +16,61 @@ metadata:
 
 # Positioning Audit
 
-This skill converts supplied evidence into a reviewable decision. It does not publish, contact people, buy media, alter an account, or turn an assumption into a public claim.
+A profile can sound polished and still give a stranger no reason to care. This skill finds the actual promise, proof, audience, and category language already present, then identifies the smallest credible change. It does not manufacture differentiation.
 
-## 1. Get the right evidence
+## 1. Assemble the evidence
 
-Ask for the source, its date range, the decision to make, the intended audience, and the relevant offer or campaign. Identify the smallest missing input before continuing.
+Ask for the current bio/profile, offer or landing-page copy, three to five customer quotes or outcomes approved for use, and two to five competitor profiles or posts. Ask what action the profile should earn: follow, DM, email signup, or purchase.
 
-## 2. Read what is there
+If customer proof is absent, stop at a diagnosis. A new promise without proof is copywriting, not positioning.
 
-Separate observed facts, direct quotes, hypotheses, and unknowns. Cite supplied evidence behind every recommendation. Where sources disagree, preserve the disagreement.
+## 2. Map the current message
 
-## 3. Make the decision document
+For the brand and each competitor, record:
 
-Return the recommendation, why the evidence supports it, assumptions, risks, and the next smallest test. State exactly what a human must approve before anything becomes public.
+- the audience named or implied
+- the promised outcome
+- the mechanism or category label
+- proof shown, if any
+- the next action requested
+- repeated phrases and empty category language
 
-## 4. Hand off cleanly
+Quote the source next to each finding. Mark an item "unclear" rather than filling it in from industry assumptions.
 
-Give the output to the next named skill only after the decision and source claims are reviewed. Do not silently turn planning work into execution.
+## 3. Find the credible difference
+
+Compare the maps. Look for one of three things: a proof point competitors do not show, a specific audience they ignore, or a mechanism the brand can honestly explain. Do not treat silence in a small sample as market-wide white space.
+
+Write one positioning sentence in this shape: **For [specific audience] who need [job], [brand] helps them get [outcome] through [mechanism], with [proof].** Flag any missing proof in brackets.
+
+## 4. Stress-test it on the profile
+
+Test the sentence against four questions:
+
+1. Could a competitor say this unchanged?
+2. Is every noun understandable to the target audience?
+3. Is the outcome backed by a supplied fact or approved quote?
+4. Does the requested next action make sense after reading it once?
+
+Return the smallest profile changes: name field, bio promise, proof, pinned-content role, and link CTA. Keep the current message when evidence does not justify a rewrite.
 
 ## Hard rules
 
-- Never invent metrics, demographics, outcomes, quotes, integrations, reach, or platform access.
-- Never present a correlation as causal proof.
-- Keep observed fact, hypothesis, and recommendation visibly separate.
-- If evidence is too thin, say so and request the smallest useful collection step.
+- Do not invent customer outcomes, category leadership, demographics, or proof.
+- Do not copy competitor wording; map the technique, then use the brand's own language.
+- Do not call an unobserved gap "white space".
+- Separate facts about the current profile from proposed language.
+- A public customer quote needs approval before use.
 
 ## Failure modes
 
 | Symptom | Cause | Fix |
 |---|---|---|
-| Generic advice | no concrete source material | ask for examples, exports, comments, or approved proof |
-| Overconfident conclusion | assumptions were treated as facts | label assumptions and propose a test |
-| Risky public language | proof or approval is missing | remove it or hold it for review |
-| Wrong workflow | another method owns the next job | route to the neighbouring skill below |
+| The position sounds generic | it names a broad category, not a job and proof | narrow the audience or bring in real proof |
+| The claim is stronger than the evidence | the desired outcome replaced the observed one | bracket the claim and collect validation |
+| Every competitor sounds the same | only bios were compared | add posts, customer proof, and actual offers |
+| The bio improves but conversion does not | the next action is unclear | audit the link destination and pinned content |
 
 ## Where it sits
 
-audience-personas + social-proof-mining → positioning-audit → profile-conversion-audit.
+`social-listening` finds demand language → `audience-personas` groups it → **positioning-audit** chooses the credible message → `profile-conversion-audit` tests the profile → `campaign-brief` carries the position into a campaign.
