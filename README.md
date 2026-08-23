@@ -13,7 +13,7 @@
 
 ## What this is
 
-Twelve Claude "skills" that work like a whole content team in one install. The workflow: **scrape what's in demand → feed Claude a viral reel → it studies the whole thing → it builds you an original in your voice → then it turns the comments into leads.** One skill ([Content Factory](skills/content-factory/SKILL.md)) runs **all the others in order** so you get a finished reel + the lead loop from one command; one gives Claude a permanent memory; the rest each do one job in the pipeline. No code, no editing suite.
+Claude "skills" that work like a whole content team in one install. The workflow: **scrape what's in demand → feed Claude a viral reel → it studies the whole thing → it builds you an original in your voice → then it turns the comments into leads.** One skill ([Content Factory](skills/content-factory/SKILL.md)) runs **all the others in order** so you get a finished reel + the lead loop from one command; one gives Claude a permanent memory; the rest each do one job in the pipeline. No code, no editing suite.
 
 | Skill | Team role | What it does |
 |-------|-----------|--------------|
@@ -30,6 +30,55 @@ Twelve Claude "skills" that work like a whole content team in one install. The w
 | [Content Repurposer](skills/content-repurposer/SKILL.md) | Repurposer | Turns one blog post / podcast / video into 5+ reel ideas and outlines. |
 | [Content Calendar](skills/content-calendar/SKILL.md) | Planner | Sequences your ideas into a postable 2-week reel calendar with formats and hooks. |
 | [Comment Responder](skills/comment-responder/SKILL.md) | Lead-gen | Turns every comment into a lead on autopilot — warm public reply (no link) + DMs the resource, 24/7. |
+
+## The 30 Instagram skills
+
+The set referenced from [30 Claude skills to run your Instagram page](https://ootto.ai/blog/30-claude-skills-to-automate-your-instagram-content) — grouped by the job they do.
+
+**Memory — Claude learns your brand (1)**
+
+- [AI Brain](skills/ai-brain/SKILL.md) — permanent memory of your voice, audience and past hits.
+
+**Study — learn what is working (5)**
+
+- [Reel Analyzer](skills/reel-analyzer/SKILL.md) — any viral reel, torn down frame by frame.
+- [Trend Spotter](skills/trend-spotter/SKILL.md) — what is breaking in your niche, and whether it suits you.
+- [Competitor Teardown](skills/competitor-teardown/SKILL.md) — the pattern behind a rival's best posts.
+- [Comment Mining](skills/comment-mining/SKILL.md) — your audience already told you what to make.
+- [Content Audit](skills/content-audit/SKILL.md) — what to double down on, and what to stop.
+
+**Create — idea to finished reel (10)**
+
+- [Viral Hook Writer](skills/viral-hook-writer/SKILL.md) — ten ranked openings for the first three seconds.
+- [Reel Scripter](skills/reel-scripter/SKILL.md) — the winning hook turned into a full script in your voice.
+- [Reel Builder](skills/reel-builder/SKILL.md) — the whole reel, beat by beat.
+- [A/B Hook Tester](skills/ab-hook-tester/SKILL.md) — two hooks, one variable, a real answer.
+- [Carousel Builder](skills/carousel-builder/SKILL.md) — one idea, ten slides, a save at the end.
+- [Story Sequencer](skills/story-sequencer/SKILL.md) — an arc that earns the tap-through.
+- [Cover & Thumbnail Brief](skills/cover-thumbnail-brief/SKILL.md) — the frame that stops the scroll on the grid.
+- [On-Screen Text Writer](skills/on-screen-text-writer/SKILL.md) — for the 80% watching on mute.
+- [B-Roll & Shot List](skills/b-roll-shot-list/SKILL.md) — everything to film, in shooting order.
+- [UGC Creator Brief](skills/ugc-creator-brief/SKILL.md) — a brief a creator can actually shoot.
+
+**Distribute & convert — publish and turn views into leads (8)**
+
+- [Caption & Hashtags](skills/caption-and-hashtags/SKILL.md) — caption, tags and the first comment.
+- [Content Repurposer](skills/content-repurposer/SKILL.md) — one long-form source into five reels.
+- [Content Calendar](skills/content-calendar/SKILL.md) — a two-week plan with hooks and formats.
+- [Comment Responder](skills/comment-responder/SKILL.md) — replies, DMs the lead magnet, logs the lead.
+- [CTA Writer](skills/cta-writer/SKILL.md) — one ask, matched to the reel.
+- [DM Script Writer](skills/dm-script-writer/SKILL.md) — from comment to booked call.
+- [Best-Time Scheduler](skills/best-time-scheduler/SKILL.md) — a cadence you will actually keep.
+- [Cross-Platform Reformatter](skills/cross-platform-reformatter/SKILL.md) — one reel, fitted to three platforms.
+
+**Grow & analyze — scale the account (6)**
+
+- [Series Planner](skills/series-planner/SKILL.md) — a format people come back for.
+- [Content Pillar Builder](skills/content-pillar-builder/SKILL.md) — the 3-5 themes everything ladders up to.
+- [Bio & Profile Optimizer](skills/bio-profile-optimizer/SKILL.md) — the profile is the conversion page.
+- [Collab Outreach](skills/collab-outreach/SKILL.md) — a pitch that does not read like a template.
+- [Analytics Readout](skills/analytics-readout/SKILL.md) — your numbers, in plain English.
+- [Hashtag & Keyword Research](skills/hashtag-keyword-research/SKILL.md) — get found in search, not just the feed.
 
 ## How the whole thing works (the factory)
 
