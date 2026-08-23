@@ -18,30 +18,35 @@ metadata:
 Scans what is breaking in your niche right now — formats, sounds, angles — and tells you which
 trends actually fit your brand, and which to sit out.
 
-## What you get
 
-- **The formats moving right now** — named, with why they are spreading, not just a list of videos.
-- **The angle underneath** — the emotional job the format is doing (relief, status, fear of missing it).
-- **A fit score for YOU** — trends are only useful if they suit your voice and offer. Each one is marked
-  `take it`, `adapt it`, or `sit this out`, with the reason.
-- **A ready first move** — for every `take it`, the hook and the opening shot to make it yours.
+## When to use
+You need this week's angle and you don't want to guess. Run it before you pick what to make.
 
-## How to run it
+## What you'll need
+Your niche in one line, and ideally 3-8 peer handles. With [agent-reach](../agent-reach/SKILL.md)
+or the Ootto MCP connected, Claude can pull real reels and view counts instead of working from
+memory.
 
-Give it your niche and, if you have them, five accounts you consider peers.
+## Instructions
+Give Claude the input and run this.
 
 ```
-/trend-spotter AI tools for solo founders. Peers: @a @b @c
+You are my trend analyst for [NICHE]. Peers: [HANDLES / paste 10-20 recent reels with view counts].
+
+1. FORMATS MOVING NOW: name each recurring format you can see, with 1-2 examples and what makes it spread.
+2. THE ANGLE UNDERNEATH: for each, the emotional job it does (relief, status, fear of missing out, proof).
+3. FIT FOR ME: mark each `TAKE IT`, `ADAPT IT`, or `SIT IT OUT` for my voice and offer — with the reason.
+4. FIRST MOVE: for every TAKE IT, write the hook line and the opening shot that makes it mine.
+5. FADING: anything that looks past peak, so I don't arrive late.
+
+Rank by fit, not by view count. Tell me to skip things.
 ```
 
-If you have the Ootto MCP connected, it can pull real reels and their view counts instead of working from
-memory — that is the difference between a guess and a read.
+**Honesty:** Only call something a trend if you can point at real examples. If the data isn't there, say so
+rather than inventing a wave.
 
-## The rule it follows
+**Next:** [viral-hook-writer](../viral-hook-writer/SKILL.md) → [reel-scripter](../reel-scripter/SKILL.md)
 
-A trend you cannot execute in your own voice is not an opportunity, it is a distraction. This skill will
-tell you to skip things. That is the point.
+---
 
-## Part of the set
-
-One of the 30 free Claude content skills → [Ootto content skills](https://github.com/Ootto-AI/claude-content-skills). Pair it with the rest of the pipeline: `/reel-analyzer` to study, `/viral-hook-writer` and `/reel-scripter` to write, `/reel-builder` to make it, `/comment-responder` to convert.
+Built by **[Ootto](https://www.ootto.ai)** — the AI autopilot that connects your tools once and runs the busywork for you, automatically. [Book a demo →](https://www.ootto.ai)

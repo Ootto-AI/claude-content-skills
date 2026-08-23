@@ -18,24 +18,31 @@ metadata:
 Writes the cover-frame text and visual brief that makes your reel stop the scroll on the grid and
 in Explore.
 
-## What you get
 
-- **Cover text of 3-5 words**, sized to be legible as a grid thumbnail — which is smaller than you are
-  designing on.
-- **The visual brief** — what is in frame, where the subject sits, what the contrast does.
-- **Grid harmony** — how it sits beside your last eight covers without disappearing into them.
-- **What to leave out** — the top and bottom bands the platform covers with its own UI.
+## When to use
+The reel is made and the grid cover decides whether anyone opens it.
 
-## How to run it
+## What you'll need
+The reel topic or script, and a look at your current grid.
+
+## Instructions
+Give Claude the input and run this.
 
 ```
-/cover-thumbnail-brief reel about the 14 agents that run my page
+You are my cover designer. Reel: [TOPIC/SCRIPT]. My grid currently looks like: [describe or paste].
+
+1. COVER TEXT: 3-5 words max. Give me three options, ranked, each legible at thumbnail size.
+2. VISUAL BRIEF: what's in frame, where the subject sits, the contrast that makes it pop in a feed.
+3. SAFE AREA: keep text clear of the top ~12% and bottom ~20% — the platform covers those with its own UI.
+4. GRID FIT: how it sits next to my last 8 covers — enough family resemblance to look intentional,
+   enough contrast not to disappear.
+5. TEST: describe it at 150px wide. If it's unreadable there, give me a simpler option.
 ```
 
-## Legibility beats cleverness
+**Honesty:** Legibility beats cleverness. A clever cover nobody can read at thumbnail size does not exist.
 
-If it cannot be read at thumbnail size, it does not exist.
+**Next:** [caption-and-hashtags](../caption-and-hashtags/SKILL.md)
 
-## Part of the set
+---
 
-One of the 30 free Claude content skills → [Ootto content skills](https://github.com/Ootto-AI/claude-content-skills). Pair it with the rest of the pipeline: `/reel-analyzer` to study, `/viral-hook-writer` and `/reel-scripter` to write, `/reel-builder` to make it, `/comment-responder` to convert.
+Built by **[Ootto](https://www.ootto.ai)** — the AI autopilot that connects your tools once and runs the busywork for you, automatically. [Book a demo →](https://www.ootto.ai)

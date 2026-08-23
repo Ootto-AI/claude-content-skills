@@ -18,26 +18,35 @@ metadata:
 Reverse-engineers a rival account's best posts into the patterns, hooks, and posting cadence
 actually driving their growth.
 
-## What you get
 
-- **Their top posts, ranked** — and crucially, what those have in common that their flops do not.
-- **The hook pattern** — the shape they reuse, written out as a template you can fill.
-- **Cadence and mix** — how often, what ratio of formats, what they post when something lands.
-- **The gap** — what their audience keeps asking for that they are not making. That gap is your lane.
+## When to use
+A rival is growing and you want the mechanism, not a vibe.
 
-## How to run it
+## What you'll need
+Their handle, or 5-10 of their posts with engagement numbers. [agent-reach](../agent-
+reach/SKILL.md) can pull them.
+
+## Instructions
+Give Claude the input and run this.
 
 ```
-/competitor-teardown @theirhandle
+You are my competitive analyst. Account: [HANDLE]. Posts: [paste 5-10 with views/likes/comments].
+
+1. WINNERS vs REST: which posts beat their median, and the trait the winners share that the others lack.
+2. HOOK PATTERN: write their reusable opening as a fill-in template.
+3. STRUCTURE: the beat shape they repeat.
+4. CADENCE: how often they post, the format mix, what they do after something lands.
+5. THE GAP: what their comments keep asking for that they are NOT making. That gap is my lane.
+6. MY THREE: three reels I could make this week in that gap, in my voice.
+
+Give me the pattern, never their copy.
 ```
 
-Or paste five of their best posts directly if you already know which ones to study.
+**Honesty:** This produces a pattern to model. Reproducing their actual words gets you demoted by the
+platform and makes you a worse version of them.
 
-## Model the technique, never the words
+**Next:** [comment-mining](../comment-mining/SKILL.md) → [viral-hook-writer](../viral-hook-writer/SKILL.md)
 
-This produces a pattern, not a script to copy. Reproducing someone's actual copy gets you demoted by the
-platform and, more importantly, makes you a worse version of them. Take the structure, write your own.
+---
 
-## Part of the set
-
-One of the 30 free Claude content skills → [Ootto content skills](https://github.com/Ootto-AI/claude-content-skills). Pair it with the rest of the pipeline: `/reel-analyzer` to study, `/viral-hook-writer` and `/reel-scripter` to write, `/reel-builder` to make it, `/comment-responder` to convert.
+Built by **[Ootto](https://www.ootto.ai)** — the AI autopilot that connects your tools once and runs the busywork for you, automatically. [Book a demo →](https://www.ootto.ai)

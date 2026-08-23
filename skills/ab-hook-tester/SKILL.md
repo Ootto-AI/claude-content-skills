@@ -18,25 +18,36 @@ metadata:
 Generates two genuinely distinct hook variants for the same reel so you can post-test which
 opening actually wins.
 
-## What you get
 
-- **Two hooks built on different mechanisms** — not one hook reworded. One might lead on the result, the
-  other on the objection. If both use the same lever, the test tells you nothing.
-- **The hypothesis for each** — what you learn depending on which wins.
-- **A fair test setup** — same time of day, same length, same thumbnail treatment, so the hook is the
-  only variable.
-- **What to read afterwards** — 3-second retention, not likes.
+## When to use
+You have a reel and two instincts about how to open it.
 
-## How to run it
+## What you'll need
+The script or the idea, plus what you're optimising for (retention, saves, DMs).
+
+## Instructions
+Give Claude the input and run this.
 
 ```
-/ab-hook-tester [paste your script or idea]
+You are my hook tester. Reel: [paste script or idea]. I care most about: [retention/saves/DMs].
+
+Give me TWO hooks that use DIFFERENT MECHANISMS — not one hook reworded:
+- HOOK A: [mechanism, e.g. result-first] — the exact on-screen text + spoken line.
+- HOOK B: [a different mechanism, e.g. objection-first] — same.
+
+Then:
+1. HYPOTHESIS: what I learn if A wins, and what I learn if B wins.
+2. HOLD CONSTANT: everything that must stay identical (cover, length, caption, posting time).
+3. READ: which metric decides it, and at what point (3s retention, not likes).
+4. SAMPLE: roughly how many views before the result means anything.
+
+If both hooks pull the same lever, say so and replace one.
 ```
 
-## One variable at a time
+**Honesty:** One variable. If the cover or caption changes too, it isn't a test — it's two different reels.
 
-If you change the hook AND the cover AND the caption, you have not run a test, you have made two reels.
+**Next:** [reel-scripter](../reel-scripter/SKILL.md) → [cover-thumbnail-brief](../cover-thumbnail-brief/SKILL.md)
 
-## Part of the set
+---
 
-One of the 30 free Claude content skills → [Ootto content skills](https://github.com/Ootto-AI/claude-content-skills). Pair it with the rest of the pipeline: `/reel-analyzer` to study, `/viral-hook-writer` and `/reel-scripter` to write, `/reel-builder` to make it, `/comment-responder` to convert.
+Built by **[Ootto](https://www.ootto.ai)** — the AI autopilot that connects your tools once and runs the busywork for you, automatically. [Book a demo →](https://www.ootto.ai)

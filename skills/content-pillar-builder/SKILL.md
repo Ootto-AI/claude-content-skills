@@ -16,23 +16,33 @@ metadata:
 
 Defines the 3-5 themes your account posts against, so every reel ladders up to a clear position.
 
-## What you get
 
-- **3-5 pillars**, each a real theme rather than a topic list.
-- **The rotation** — how often each appears, so the feed stays varied without drifting.
-- **The position they add up to** — what someone would say you are about after scrolling ten posts.
-- **What falls outside**, which is the part that keeps an account coherent.
+## When to use
+Your feed feels random and you can't say what the account is about.
 
-## How to run it
+## What you'll need
+What you sell, who to, and your last 20 posts if you have them.
+
+## Instructions
+Give Claude the input and run this.
 
 ```
-/content-pillar-builder I sell an AI content tool to solo founders
+You are my brand strategist. Business: [WHAT]. Audience: [WHO]. Recent posts: [paste if available].
+
+1. PILLARS: 3-5, no more. Each a THEME with a point of view, not a topic bucket.
+2. WHY EACH EARNS ITS PLACE: the audience need it serves and the business job it does.
+3. ROTATION: how often each appears in a week.
+4. THE POSITION: in one sentence, what someone would say I'm about after scrolling ten posts.
+5. OUT OF SCOPE: what does NOT fit. This is the part that keeps an account coherent.
+6. AUDIT: if I gave you recent posts, sort them into pillars and show me what's over- and under-served.
+
+If more than five pillars fit, the framework is too loose — force it down.
 ```
 
-## Fewer than five
+**Honesty:** Six pillars is no pillars. If everything fits, the framework isn't doing any work.
 
-Six pillars is no pillars. If everything fits, the framework is not doing any work.
+**Next:** [content-calendar](../content-calendar/SKILL.md) → [series-planner](../series-planner/SKILL.md)
 
-## Part of the set
+---
 
-One of the 30 free Claude content skills → [Ootto content skills](https://github.com/Ootto-AI/claude-content-skills). Pair it with the rest of the pipeline: `/reel-analyzer` to study, `/viral-hook-writer` and `/reel-scripter` to write, `/reel-builder` to make it, `/comment-responder` to convert.
+Built by **[Ootto](https://www.ootto.ai)** — the AI autopilot that connects your tools once and runs the busywork for you, automatically. [Book a demo →](https://www.ootto.ai)

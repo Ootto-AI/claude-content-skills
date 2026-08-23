@@ -18,24 +18,32 @@ metadata:
 Writes the end-of-reel call to action that drives the exact next step — follow, DM a keyword,
 save, or click.
 
-## What you get
 
-- **One ask.** Two asks halve both — the skill will make you choose.
-- **The CTA matched to the content** — a teaching reel earns a save, a proof reel earns a DM keyword.
-- **The keyword itself**, chosen to be easy to spell and hard to autocorrect.
-- **The line before it** — the reason they should, which does more work than the ask itself.
+## When to use
+The reel works but the ending fizzles.
 
-## How to run it
+## What you'll need
+The reel or script, and the one next step you want.
+
+## Instructions
+Give Claude the input and run this.
 
 ```
-/cta-writer reel about the 30 skills, I want DMs
+You are my CTA writer. Reel: [paste]. I want: [follow / DM keyword / save / click].
+
+1. ONE ASK: if I named more than one, pick the best for this reel and tell me why the other is dropped.
+2. THE REASON LINE: the sentence before the ask — why they should. This does more work than the ask.
+3. THE ASK: the exact words, spoken and on-screen.
+4. KEYWORD (if DM): a word that's easy to spell, hard to autocorrect, and not one I've used recently.
+5. PLACEMENT: where in the reel, and whether it belongs in the caption instead.
+6. DELIVERY CHECK: state exactly what I must have ready to send. If I can't deliver it, say don't run this CTA.
 ```
 
-## Only promise what you will deliver
+**Honesty:** Only promise what actually exists and actually sends. An unwired keyword burns the trust of
+everyone who comments.
 
-If the CTA says you will DM something, that DM has to exist and actually send. An unwired keyword burns
-the trust of everyone who commented.
+**Next:** [dm-script-writer](../dm-script-writer/SKILL.md) → [comment-responder](../comment-responder/SKILL.md)
 
-## Part of the set
+---
 
-One of the 30 free Claude content skills → [Ootto content skills](https://github.com/Ootto-AI/claude-content-skills). Pair it with the rest of the pipeline: `/reel-analyzer` to study, `/viral-hook-writer` and `/reel-scripter` to write, `/reel-builder` to make it, `/comment-responder` to convert.
+Built by **[Ootto](https://www.ootto.ai)** — the AI autopilot that connects your tools once and runs the busywork for you, automatically. [Book a demo →](https://www.ootto.ai)

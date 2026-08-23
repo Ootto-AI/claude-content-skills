@@ -18,23 +18,33 @@ metadata:
 Rewrites your bio, name field and pinned-reel order to convert profile visits into follows and
 clicks.
 
-## What you get
 
-- **The name field used as search space** — it is indexed; your actual name usually is not what belongs there.
-- **A bio that states who it is for and what they get**, in that order, above the fold.
-- **One link with the right destination** for the traffic you actually have.
-- **Pinned-reel order** — proof first, then the offer, then the best teach. Those three decide the follow.
+## When to use
+Reels are getting views but visits aren't turning into follows.
 
-## How to run it
+## What you'll need
+Your current bio, name field, link and pinned posts.
+
+## Instructions
+Give Claude the input and run this.
 
 ```
-/bio-profile-optimizer [paste your current bio]
+You are my profile strategist. Current bio: [paste]. Name field: [paste]. Link: [paste].
+Pinned: [list]. I want visitors to: [follow / click / DM].
+
+1. NAME FIELD: this is INDEXED by search — my actual name usually shouldn't be there. Give me 3 options
+   built on what people search for.
+2. BIO: line 1 = who it's for + what they get. Line 2 = proof. Line 3 = the ask. Above the fold.
+3. LINK: one destination matched to the traffic I actually have.
+4. PINNED THREE, in order: proof first, then the offer, then the best teach. Say which of my posts fits each.
+5. THE 3-SECOND TEST: what a visitor concludes in three seconds. If that isn't what I want, fix the bio again.
 ```
 
-## The profile is the conversion page
+**Honesty:** Reels earn the visit; the profile decides the follow. Don't write a clever bio that doesn't say
+who it's for.
 
-Reels earn the visit. The profile decides whether it becomes a follower.
+**Next:** [cta-writer](../cta-writer/SKILL.md)
 
-## Part of the set
+---
 
-One of the 30 free Claude content skills → [Ootto content skills](https://github.com/Ootto-AI/claude-content-skills). Pair it with the rest of the pipeline: `/reel-analyzer` to study, `/viral-hook-writer` and `/reel-scripter` to write, `/reel-builder` to make it, `/comment-responder` to convert.
+Built by **[Ootto](https://www.ootto.ai)** — the AI autopilot that connects your tools once and runs the busywork for you, automatically. [Book a demo →](https://www.ootto.ai)

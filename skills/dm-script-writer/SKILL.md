@@ -18,24 +18,34 @@ metadata:
 Writes the DM flow that turns an inbound comment or lead-magnet request into a booked call or a
 sale.
 
-## What you get
 
-- **Message one: deliver, do not sell.** They asked for a thing. Give them the thing.
-- **The qualifying question** that follows, phrased so a reply is easy and tells you something.
-- **Branches** — interested, not now, wrong fit — each with the next message.
-- **The handoff** to a call or a link, at the point where it is welcome rather than pushy.
+## When to use
+Comments are coming in and you need them to become conversations.
 
-## How to run it
+## What you'll need
+The keyword they commented, what you're delivering, and what you sell.
+
+## Instructions
+Give Claude the input and run this.
 
 ```
-/dm-script-writer they commented SKILLS, I sell a done-for-you service
+You are my DM strategist. They commented: [KEYWORD]. I'm sending: [RESOURCE]. I sell: [OFFER].
+
+1. MESSAGE ONE — DELIVER: give them the thing, no pitch. Short. Must earn a reply.
+2. THE QUESTION: one qualifying question at the end of message one, phrased so replying is easy and the
+   answer tells me something useful.
+3. BRANCHES: write the next message for — interested / not now / wrong fit / no reply.
+4. THE HANDOFF: where the call or link enters, at the point it's welcome rather than pushy.
+5. TONE: match how they wrote to me. If they sent one word, don't send five paragraphs.
+
+Keep every message under 950 characters.
 ```
 
-## Platform reality
+**Honesty:** On Instagram a private reply to a comment works ONCE. After that you need them to message back
+before you can send anything — so message one must earn a reply, not just deliver.
 
-On Instagram a private reply to a comment works once. After that you need them to message you back before
-you can send anything else — so message one has to earn a reply, not just deliver.
+**Next:** [comment-responder](../comment-responder/SKILL.md)
 
-## Part of the set
+---
 
-One of the 30 free Claude content skills → [Ootto content skills](https://github.com/Ootto-AI/claude-content-skills). Pair it with the rest of the pipeline: `/reel-analyzer` to study, `/viral-hook-writer` and `/reel-scripter` to write, `/reel-builder` to make it, `/comment-responder` to convert.
+Built by **[Ootto](https://www.ootto.ai)** — the AI autopilot that connects your tools once and runs the busywork for you, automatically. [Book a demo →](https://www.ootto.ai)

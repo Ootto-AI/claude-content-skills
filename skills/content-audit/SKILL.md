@@ -18,25 +18,35 @@ metadata:
 Reviews your last 30 posts to find what is worth doubling down on, what is dead weight, and the
 gaps to fill.
 
-## What you get
 
-- **Your own outliers** — the posts that beat your median, and the trait they share.
-- **The dead weight** — formats you keep making that never land. Named, so you can stop.
-- **Score by trait, not by post** — hook style, length, format, topic, each with its real multiple.
-- **What to make next**, derived from your numbers rather than anyone's advice.
+## When to use
+Before making more, work out what to stop.
 
-## How to run it
+## What you'll need
+Your last 30 posts with views, saves, comments and shares. The Ootto MCP or your Instagram
+insights export.
+
+## Instructions
+Give Claude the input and run this.
 
 ```
-/content-audit
+You are my content analyst. Here are my last 30 posts with their numbers: [paste].
+
+1. MEDIAN FIRST: state my median views/saves so everything is judged against ME, not someone else.
+2. OUTLIERS: the posts that beat it, and the trait they share.
+3. DEAD WEIGHT: formats or topics I keep making that consistently underperform. Name them plainly.
+4. BY TRAIT: score hook style, length, format and topic, each with its real multiple vs median.
+5. STOP / KEEP / TEST: three short lists.
+6. NEXT FIVE: five posts to make, each justified by a number above.
+
+If a pattern isn't in the data, say "not enough signal" rather than guessing.
 ```
 
-Paste post titles with views, saves and comments, or let the Ootto MCP pull your real insights.
+**Honesty:** Every multiple must come from the numbers pasted in. No estimated figures, and no advice that
+contradicts my own data.
 
-## It will tell you to stop things
+**Next:** [content-pillar-builder](../content-pillar-builder/SKILL.md) → [content-calendar](../content-calendar/SKILL.md)
 
-A useful audit kills formats. If everything comes back positive, the audit was not honest.
+---
 
-## Part of the set
-
-One of the 30 free Claude content skills → [Ootto content skills](https://github.com/Ootto-AI/claude-content-skills). Pair it with the rest of the pipeline: `/reel-analyzer` to study, `/viral-hook-writer` and `/reel-scripter` to write, `/reel-builder` to make it, `/comment-responder` to convert.
+Built by **[Ootto](https://www.ootto.ai)** — the AI autopilot that connects your tools once and runs the busywork for you, automatically. [Book a demo →](https://www.ootto.ai)

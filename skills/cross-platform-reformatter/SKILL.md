@@ -18,24 +18,34 @@ metadata:
 Reshapes one Instagram reel into a TikTok and a YouTube Short — adjusting hook, length and
 captions per platform.
 
-## What you get
 
-- **A per-platform hook** — Shorts viewers arrive from search and want the answer stated; TikTok wants the
-  tension first. Same reel, different first line.
-- **Length adjustments** and what to cut for each.
-- **The CTA swap** — there is no comment-to-DM funnel on YouTube, so the resource goes in the description.
-- **Title, description and tags** for Shorts, which are search-driven in a way reels are not.
+## When to use
+One reel, and you want it working on TikTok and Shorts too.
 
-## How to run it
+## What you'll need
+The reel script and its CTA.
+
+## Instructions
+Give Claude the input and run this.
 
 ```
-/cross-platform-reformatter [paste the reel script]
+You are my distribution editor. Reel: [paste script + CTA].
+
+For EACH of TikTok and YouTube Shorts:
+1. HOOK: rewrite the first line for that platform. Shorts viewers arrive from search and want the answer
+   stated; TikTok wants the tension first.
+2. LENGTH: what to cut or extend, and where.
+3. CAPTIONS: on-screen text changes (safe areas and UI differ).
+4. CTA SWAP: there is no comment-to-DM funnel on YouTube — move the resource to the description.
+5. METADATA: for Shorts, a searchable title, description and tags. This is a search platform.
+6. WATERMARK: confirm the export has no other platform's watermark.
 ```
 
-## Do not just re-upload
+**Honesty:** Don't just re-upload. A reel with a foreign watermark and an unfitted hook underperforms on both
+platforms.
 
-A reel with another platform's watermark and an unfitted hook underperforms on both.
+**Next:** [caption-and-hashtags](../caption-and-hashtags/SKILL.md)
 
-## Part of the set
+---
 
-One of the 30 free Claude content skills → [Ootto content skills](https://github.com/Ootto-AI/claude-content-skills). Pair it with the rest of the pipeline: `/reel-analyzer` to study, `/viral-hook-writer` and `/reel-scripter` to write, `/reel-builder` to make it, `/comment-responder` to convert.
+Built by **[Ootto](https://www.ootto.ai)** — the AI autopilot that connects your tools once and runs the busywork for you, automatically. [Book a demo →](https://www.ootto.ai)

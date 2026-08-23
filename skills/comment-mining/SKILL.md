@@ -18,26 +18,33 @@ metadata:
 Reads your comments and DMs to surface the questions, objections and exact phrases your audience
 uses — and turns them into content ideas.
 
-## What you get
 
-- **The recurring questions**, grouped — not 40 comments, but the 6 things people keep asking.
-- **The objections** — what stops them buying or trying, in their words.
-- **Their vocabulary** — the phrases they actually use. Put these in your hooks and captions verbatim;
-  matching your audience's language is the cheapest relevance win there is.
-- **Ranked ideas** — each question turned into a reel idea, ordered by how often it came up.
+## When to use
+You're out of ideas, but your audience has been telling you what they want.
 
-## How to run it
+## What you'll need
+Your last 30-100 comments or DMs. The Ootto MCP can read them off your posts directly.
+
+## Instructions
+Give Claude the input and run this.
 
 ```
-/comment-mining [paste your last 50 comments]
+You are my audience researcher. Here are my comments/DMs: [paste].
+
+1. RECURRING QUESTIONS: group them — give me the 5-8 things people actually keep asking, with counts.
+2. OBJECTIONS: what stops them buying, trying, or believing me.
+3. THEIR WORDS: the exact phrases they use. Quote them verbatim — I want these in my hooks and captions.
+4. MISREADS: where people misunderstood something I said (each one is a reel).
+5. IDEAS: turn the top questions into reel ideas, ranked by how often they came up, each with a hook line.
+
+Use their vocabulary, not mine.
 ```
 
-With the Ootto MCP connected it can read the comments off your posts directly.
+**Honesty:** Every idea must trace to a real comment. Don't invent audience demand — the whole point is that
+this is measured, not guessed.
 
-## Why this beats brainstorming
+**Next:** [viral-hook-writer](../viral-hook-writer/SKILL.md) → [reel-scripter](../reel-scripter/SKILL.md)
 
-An idea you invented is a guess. A question five people asked is demand you already measured.
+---
 
-## Part of the set
-
-One of the 30 free Claude content skills → [Ootto content skills](https://github.com/Ootto-AI/claude-content-skills). Pair it with the rest of the pipeline: `/reel-analyzer` to study, `/viral-hook-writer` and `/reel-scripter` to write, `/reel-builder` to make it, `/comment-responder` to convert.
+Built by **[Ootto](https://www.ootto.ai)** — the AI autopilot that connects your tools once and runs the busywork for you, automatically. [Book a demo →](https://www.ootto.ai)

@@ -18,24 +18,34 @@ metadata:
 Builds searchable, niche-fit hashtag and keyword sets so your reels surface in Explore and in
 search.
 
-## What you get
 
-- **A tiered set** — a few broad, mostly mid-size, several niche. All-broad tags means competing with
-  accounts a hundred times your size for nothing.
-- **Caption keywords**, which now matter more than tags — the caption is indexed and searched.
-- **The spoken keyword** — say the search term out loud in the reel; the transcript is indexed too.
-- **A set to reuse and a set to rotate**, so you are not rebuilding this every post.
+## When to use
+You want reels surfacing in search and Explore, not just the follower feed.
 
-## How to run it
+## What you'll need
+The reel topic and your niche.
+
+## Instructions
+Give Claude the input and run this.
 
 ```
-/hashtag-keyword-research reel about automating Instagram with Claude
+You are my search strategist. Reel: [TOPIC]. Niche: [NICHE].
+
+1. CAPTION KEYWORDS: the searchable phrase for my first caption line. This matters more than tags now —
+   captions are indexed.
+2. SPOKEN KEYWORD: the phrase to say out loud in the reel. Transcripts are indexed too.
+3. HASHTAGS, TIERED: 2-3 broad, 5-7 mid-size, 5-8 niche. All-broad means competing with accounts a
+   hundred times my size for nothing.
+4. CORE SET vs ROTATING SET: which to reuse every post, which to swap per topic.
+5. AVOID: banned, spammy or wildly off-fit tags.
+6. THE SEARCH I'M TRYING TO WIN, stated as the phrase a real person would type.
 ```
 
-## Search beats tags now
+**Honesty:** Don't pad to 30 tags for the sake of it. If the niche set is small, say so — relevance beats
+volume.
 
-The keyword in your first caption line and in your spoken words does more than 30 hashtags.
+**Next:** [caption-and-hashtags](../caption-and-hashtags/SKILL.md)
 
-## Part of the set
+---
 
-One of the 30 free Claude content skills → [Ootto content skills](https://github.com/Ootto-AI/claude-content-skills). Pair it with the rest of the pipeline: `/reel-analyzer` to study, `/viral-hook-writer` and `/reel-scripter` to write, `/reel-builder` to make it, `/comment-responder` to convert.
+Built by **[Ootto](https://www.ootto.ai)** — the AI autopilot that connects your tools once and runs the busywork for you, automatically. [Book a demo →](https://www.ootto.ai)

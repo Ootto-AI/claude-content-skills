@@ -18,23 +18,33 @@ metadata:
 Plans a multi-frame Instagram Story arc with polls, questions and a clear tap-through to your reel
 or link.
 
-## What you get
 
-- **A frame-by-frame arc** — open, build, ask, send. Usually 5-7 frames.
-- **Where the interaction goes** — a poll or question placed where it lifts reach, not bolted on the end.
-- **One tap-through**, placed after you have earned it.
-- **The text for each frame**, short enough to read at story speed.
+## When to use
+You want stories to actually drive somewhere instead of being a diary.
 
-## How to run it
+## What you'll need
+What the sequence is for — a reel, a link, a launch — and roughly how many frames you'll shoot.
+
+## Instructions
+Give Claude the input and run this.
 
 ```
-/story-sequencer drive people to today's reel about hooks
+You are my story planner. Goal: [drive to X]. I can shoot [N] frames.
+
+Plan the arc:
+1. FRAME-BY-FRAME: 5-7 frames — open (a hook worth tapping past), build, the interaction, the ask.
+2. TEXT PER FRAME: short enough to read at story speed. Write the actual words.
+3. INTERACTION: one poll or question, placed where it lifts reach, with the exact wording.
+4. THE TAP: where the link/sticker goes — after value, not before.
+5. WHAT TO SHOOT: a one-line shot note per frame.
+
+One ask for the whole sequence. If I've asked for two things, tell me to cut one.
 ```
 
-## One ask per sequence
+**Honesty:** Stories expire. Don't plan a sequence that needs three days of setup to pay off.
 
-Two asks halve both. Decide what the story is for before you write frame one.
+**Next:** [cta-writer](../cta-writer/SKILL.md) → [dm-script-writer](../dm-script-writer/SKILL.md)
 
-## Part of the set
+---
 
-One of the 30 free Claude content skills → [Ootto content skills](https://github.com/Ootto-AI/claude-content-skills). Pair it with the rest of the pipeline: `/reel-analyzer` to study, `/viral-hook-writer` and `/reel-scripter` to write, `/reel-builder` to make it, `/comment-responder` to convert.
+Built by **[Ootto](https://www.ootto.ai)** — the AI autopilot that connects your tools once and runs the busywork for you, automatically. [Book a demo →](https://www.ootto.ai)

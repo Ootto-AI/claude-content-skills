@@ -18,24 +18,34 @@ metadata:
 Reads your reel insights and explains in plain English what to make more of and what to stop — no
 jargon.
 
-## What you get
 
-- **The number that matters for what you are trying to do** — reach, saves and sends answer different
-  questions. It will tell you which one you should be reading.
-- **Against your own median**, not against anyone else's screenshot.
-- **Cause, where it is visible** — retention drop at 3s is a hook problem; a drop at 12s is a middle problem.
-- **Two actions**, not twelve.
+## When to use
+You're looking at insights and can't tell what to do differently.
 
-## How to run it
+## What you'll need
+Your reel or account insights. The Ootto MCP can pull them directly.
+
+## Instructions
+Give Claude the input and run this.
 
 ```
-/analytics-readout [paste your reel insights]
+You are my analyst. Here are my insights: [paste]. My goal right now is: [reach/saves/leads/follows].
+
+1. THE METRIC THAT MATTERS for that goal — and tell me which numbers to stop staring at.
+2. VS MY MEDIAN: every figure judged against my own baseline, not anyone else's screenshot.
+3. WHERE IT BROKE: if retention data exists — a drop at ~3s is a hook problem, at ~12s a middle problem,
+   at the end a CTA problem. Name which.
+4. TWO ACTIONS. Not twelve. The two that would move the metric in point 1.
+5. WHAT I CAN'T TELL from this data, stated plainly.
+
+Every number must come from what I pasted. If something isn't there, say so — do not estimate.
 ```
 
-## Only real numbers
+**Honesty:** No invented figures, no industry benchmarks presented as my data. 'Not enough signal' is a valid
+answer.
 
-It will not estimate. If a figure is not in what you gave it, it says so rather than inventing one.
+**Next:** [content-audit](../content-audit/SKILL.md)
 
-## Part of the set
+---
 
-One of the 30 free Claude content skills → [Ootto content skills](https://github.com/Ootto-AI/claude-content-skills). Pair it with the rest of the pipeline: `/reel-analyzer` to study, `/viral-hook-writer` and `/reel-scripter` to write, `/reel-builder` to make it, `/comment-responder` to convert.
+Built by **[Ootto](https://www.ootto.ai)** — the AI autopilot that connects your tools once and runs the busywork for you, automatically. [Book a demo →](https://www.ootto.ai)

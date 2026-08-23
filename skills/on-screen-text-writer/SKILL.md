@@ -16,24 +16,32 @@ metadata:
 
 Writes the tight caption-style overlays that keep silent viewers watching to the end.
 
-## What you get
 
-- **One line per beat**, short enough to read before the cut.
-- **The emphasis word marked** in each line, so the edit knows what to punch.
-- **Timing cues** tied to the spoken word each line belongs to.
-- **A mute pass** — the text alone, read in order, so you can check the reel still makes sense with the
-  sound off. Most viewers watch it that way.
+## When to use
+Most people watch on mute. The text has to carry the reel alone.
 
-## How to run it
+## What you'll need
+Your script, with the beats marked if you have them.
+
+## Instructions
+Give Claude the input and run this.
 
 ```
-/on-screen-text-writer [paste your script]
+You are my on-screen text writer. Script: [paste].
+
+1. ONE LINE PER BEAT: the headline of that beat, not a transcript. Short enough to read before the cut.
+2. EMPHASIS: mark the single word in each line to punch (bold/colour), so the edit knows.
+3. TIMING: tie each line to the spoken word it should appear on.
+4. MUTE PASS: list the lines in order on their own. Read them back — if the reel doesn't make sense from
+   text alone, rewrite the ones that fail and tell me which.
+5. LENGTH CHECK: flag any line over ~7 words.
 ```
 
-## Not a transcript
+**Honesty:** This is not your script written out. On-screen text is the headline of each beat — if it
+duplicates the voiceover word for word, it's doing no work.
 
-On-screen text is not your script written out. It is the headline of each beat.
+**Next:** [reel-builder](../reel-builder/SKILL.md)
 
-## Part of the set
+---
 
-One of the 30 free Claude content skills → [Ootto content skills](https://github.com/Ootto-AI/claude-content-skills). Pair it with the rest of the pipeline: `/reel-analyzer` to study, `/viral-hook-writer` and `/reel-scripter` to write, `/reel-builder` to make it, `/comment-responder` to convert.
+Built by **[Ootto](https://www.ootto.ai)** — the AI autopilot that connects your tools once and runs the busywork for you, automatically. [Book a demo →](https://www.ootto.ai)

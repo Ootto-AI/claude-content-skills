@@ -18,24 +18,32 @@ metadata:
 Turns a script into a shoot-ready shot list — every clip, angle and visual you need to film, in
 order.
 
-## What you get
 
-- **A numbered shot list** in filming order, not script order — so you shoot everything at one location
-  before moving.
-- **Duration per shot**, so you film enough and not more.
-- **What each shot is FOR** — the line it covers. If a shot has no line, it gets cut.
-- **The stock fallback** — for anything you cannot film, the search term that will find it.
+## When to use
+The script is done and you need to know exactly what to film.
 
-## How to run it
+## What you'll need
+The final script.
+
+## Instructions
+Give Claude the input and run this.
 
 ```
-/b-roll-shot-list [paste your script]
+You are my first AD. Script: [paste].
+
+1. SHOT LIST in FILMING order (not script order) — group by location and setup so I shoot everything in
+   one place before moving. Number them.
+2. PER SHOT: what's in frame, the angle, the duration to film, and THE LINE IT COVERS.
+3. NO ORPHANS: if a shot doesn't cover a line, cut it and say so.
+4. COVERAGE: mark which shots are essential vs nice-to-have, so I know what to drop when time runs out.
+5. STOCK FALLBACK: for anything I can't film, the exact search term to find it.
+6. KIT: what I actually need, in one short list.
 ```
 
-## Shoot for the edit
+**Honesty:** Every shot needs a job. Pretty footage with no line to cover is what makes reels drag.
 
-Every shot needs a job. A pretty clip with no line to cover is the thing that makes reels drag.
+**Next:** [reel-builder](../reel-builder/SKILL.md)
 
-## Part of the set
+---
 
-One of the 30 free Claude content skills → [Ootto content skills](https://github.com/Ootto-AI/claude-content-skills). Pair it with the rest of the pipeline: `/reel-analyzer` to study, `/viral-hook-writer` and `/reel-scripter` to write, `/reel-builder` to make it, `/comment-responder` to convert.
+Built by **[Ootto](https://www.ootto.ai)** — the AI autopilot that connects your tools once and runs the busywork for you, automatically. [Book a demo →](https://www.ootto.ai)
