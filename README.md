@@ -47,13 +47,14 @@ The set referenced from [30 Claude skills to run your Instagram page](https://oo
 - [Comment Mining](skills/comment-mining/SKILL.md) — your audience already told you what to make.
 - [Content Audit](skills/content-audit/SKILL.md) — what to double down on, and what to stop.
 
-**Create — idea to finished reel (10)**
+**Create — idea to finished reel (11)**
 
 - [Viral Hook Writer](skills/viral-hook-writer/SKILL.md) — ten ranked openings for the first three seconds.
 - [Reel Scripter](skills/reel-scripter/SKILL.md) — the winning hook turned into a full script in your voice.
 - [Reel Builder](skills/reel-builder/SKILL.md) — the whole reel, beat by beat.
 - [A/B Hook Tester](skills/ab-hook-tester/SKILL.md) — two hooks, one variable, a real answer.
 - [Carousel Builder](skills/carousel-builder/SKILL.md) — one idea, ten slides, a save at the end.
+- [Viral Carousel](skills/viral-carousel/SKILL.md) — find the carousels your niche saved, then build yours on their structure.
 - [Story Sequencer](skills/story-sequencer/SKILL.md) — an arc that earns the tap-through.
 - [Cover & Thumbnail Brief](skills/cover-thumbnail-brief/SKILL.md) — the frame that stops the scroll on the grid.
 - [On-Screen Text Writer](skills/on-screen-text-writer/SKILL.md) — for the 80% watching on mute.
