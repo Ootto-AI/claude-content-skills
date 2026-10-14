@@ -18,6 +18,7 @@ Claude "skills" that work like a whole content team in one install. The workflow
 | Skill | Team role | What it does |
 |-------|-----------|--------------|
 | [**Content Factory**](skills/content-factory/SKILL.md) | **Showrunner** | **The whole setup in one command.** Runs the entire pipeline — find a format → study → hook → script → build → caption → post → lead loop — and repeats it 3× a day. Start here. |
+| [**Virality**](skills/virality/SKILL.md) | **Hook doctor** | **The best one.** Built from the real winners and losers of 262 posts and 3.5M views on [@jayantcreates.ai](https://www.instagram.com/jayantcreates.ai/): what our 100K+ reels did in the first 3 seconds vs what our flops did, frame by frame, plus an 8-point hook checklist. Makes Claude do something extraordinary in the first 3 seconds of every reel. |
 | [AI Brain](skills/ai-brain/SKILL.md) | Memory | **Gives Claude permanent memory.** Say "wrap up" and it saves the session to your Obsidian vault (local markdown you own); next session it recalls only what's relevant. The foundation the others run on. |
 | [Agent Reach](skills/agent-reach/SKILL.md) | Scout | **Scrapes the internet for you** — mines Reddit/communities for what people actually want (your topics), finds trending reels to model, and downloads any reel/Short → transcript. The FIND step. Free, no login. *(Bundled from [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach), MIT.)* |
 | [Reel Analyzer](skills/reel-analyzer/SKILL.md) | Researcher | **Feed it any viral reel** — Claude watches it frame by frame + reads the transcript and breaks down the hook, structure, pacing & visuals, so you can model what works. |
@@ -49,6 +50,7 @@ The set referenced from [30 Claude skills to run your Instagram page](https://oo
 
 **Create — idea to finished reel (11)**
 
+- [Virality](skills/virality/SKILL.md) — what our 100K+ winners and our flops did in the first 3 seconds, and the checklist every hook must pass.
 - [Viral Hook Writer](skills/viral-hook-writer/SKILL.md) — ten ranked openings for the first three seconds.
 - [Reel Scripter](skills/reel-scripter/SKILL.md) — the winning hook turned into a full script in your voice.
 - [Reel Builder](skills/reel-builder/SKILL.md) — the whole reel, beat by beat.
