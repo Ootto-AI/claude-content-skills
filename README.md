@@ -1,6 +1,6 @@
 # Claude Content Skills
 
-**Free, copy-paste Claude skills that run your content growth factory** — turn ideas (and your Obsidian memory) into scroll-stopping Instagram reels: hooks, scripts, repurposing, captions, and a 2-week posting calendar.
+**Free, copy-paste Claude skills that run your content growth factory** — turn ideas (and your Obsidian memory) into scroll-stopping Instagram reels and YouTube videos: hooks, scripts, thumbnails, repurposing, captions, and a 2-week posting calendar.
 
 ![Claude Content Skills — by Ootto](assets/banner.png)
 
@@ -82,6 +82,50 @@ The set referenced from [30 Claude skills to run your Instagram page](https://oo
 - [Collab Outreach](skills/collab-outreach/SKILL.md) — a pitch that does not read like a template.
 - [Analytics Readout](skills/analytics-readout/SKILL.md) — your numbers, in plain English.
 - [Hashtag & Keyword Research](skills/hashtag-keyword-research/SKILL.md) — get found in search, not just the feed.
+
+## The YouTube skills
+
+The same factory, for your YouTube channel: long-form videos and Shorts.
+[YouTube Factory](skills/youtube-factory/SKILL.md) runs them all in order; or run any one on its own.
+
+**Run the whole channel (1)**
+
+- [YouTube Factory](skills/youtube-factory/SKILL.md): find what works, title and thumbnail first, script, build, post through Ootto, then learn from the numbers.
+
+**Study: learn what is working (1)**
+
+- [YouTube Analytics](skills/youtube-analytics/SKILL.md): your channel and your competitors: views per day, engagement, the length and titles that win. *(Bundled from [openclaudia/openclaudia-skills](https://github.com/openclaudia/openclaudia-skills), MIT.)*
+
+**Create: idea to finished video (3)**
+
+- [YouTube Scriptwriting](skills/youtube-scriptwriting/SKILL.md): brain dump to a retention-built script: hook, structure, rehooks, binge-loop outro. *(Bundled from [cdeistopened/skill-stack](https://github.com/cdeistopened/skill-stack), MIT.)*
+- [YouTube Thumbnail](skills/youtube-thumbnail/SKILL.md): a high-CTR thumbnail brief and image prompt from your title. *(Bundled from [charlie947/social-media-skills](https://github.com/charlie947/social-media-skills), MIT.)*
+- [Video Marketing](skills/video-marketing/SKILL.md): Shorts vs long-form, the first 3 seconds, script structure per platform. *(Bundled from [kostja94/marketing-skills](https://github.com/kostja94/marketing-skills), MIT.)*
+
+**Get found (1)**
+
+- [YouTube SEO](skills/youtube-seo/SKILL.md): titles, descriptions, tags and thumbnails that rank in YouTube, Google and AI answers. *(Bundled from [kostja94/marketing-skills](https://github.com/kostja94/marketing-skills), MIT.)*
+
+### Connect YouTube to Claude (2 minutes)
+
+1. In Claude, open **Settings, then Connectors, then Add custom connector**.
+2. Name it **Ootto** and paste `https://mcp.ootto.ai/mcp`. Press **Connect**, then **Allow**.
+3. Log in to Ootto, pick **YouTube**, and allow access to your channel.
+4. Tell Claude: *"Run the YouTube factory for my channel: study what works in my niche and make my next video."*
+
+The same connection runs Instagram, so one Claude can post a reel to Instagram and the same video as a YouTube Short.
+
+```
+  1. FIND ............... agent-reach ........... top videos + Shorts in your niche, transcripts, comments
+  2. STUDY .............. youtube-analytics ..... your channel vs competitors: what wins, what flops
+  3. TITLE + THUMBNAIL .. youtube-seo + youtube-thumbnail  sell the video before you write it
+  4. HOOK ............... virality .............. something happens in the first 3 seconds
+  5. SCRIPT ............. youtube-scriptwriting . retention-built, rehook every 30-60s
+  6. BUILD .............. reel-builder .......... 16:9 long-form or 9:16 Short, a visual on every line
+  7. PACKAGE ............ youtube-seo ........... description, chapters, tags
+  8. POST ............... Ootto ................. uploads to your channel (unlisted for review first)
+  9. COMPOUND ........... youtube-analytics + ai-brain  the next video starts smarter
+```
 
 ## How the whole thing works (the factory)
 
