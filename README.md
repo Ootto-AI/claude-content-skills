@@ -27,6 +27,7 @@ Claude "skills" that work like a whole content team in one install. The workflow
 | [Hook Mining](skills/hook-mining/SKILL.md) | Hook miner | **Feed it a CSV of hooks that actually performed** (Sandcastles export, your analytics, scraped competitors) — it ranks them, buckets them by psychological pattern, then remixes: the proven structure stays fixed, only the power words get swapped. The opposite of slop. |
 | [Reel Scripter](skills/reel-scripter/SKILL.md) | Scriptwriter | Turns the breakdown into a tight 30-45s original script — your words, the proven structure. |
 | [Reel Builder](skills/reel-builder/SKILL.md) | Editor | Assembles the whole reel: beat-by-beat script, on-screen text, the visual for each beat + caption — ready to shoot/render. |
+| [Humanizer](skills/humanizer/SKILL.md) | Editor | **Makes Claude sound like you, not like AI.** Run it on every script and caption before you post: it strips the AI tells (staged openers, forced triads, dashes everywhere, stock AI words, filler) without changing what you said. *(Bundled from [blader/humanizer](https://github.com/blader/humanizer), MIT.)* |
 | [Caption & Hashtags](skills/caption-and-hashtags/SKILL.md) | Copywriter | Caption, tiered hashtag set, and a first comment built for saves and reach. |
 | [Content Repurposer](skills/content-repurposer/SKILL.md) | Repurposer | Turns one blog post / podcast / video into 5+ reel ideas and outlines. |
 | [Content Calendar](skills/content-calendar/SKILL.md) | Planner | Sequences your ideas into a postable 2-week reel calendar with formats and hooks. |
@@ -48,9 +49,10 @@ The set referenced from [30 Claude skills to run your Instagram page](https://oo
 - [Comment Mining](skills/comment-mining/SKILL.md) — your audience already told you what to make.
 - [Content Audit](skills/content-audit/SKILL.md) — what to double down on, and what to stop.
 
-**Create — idea to finished reel (11)**
+**Create — idea to finished reel (12)**
 
 - [Virality](skills/virality/SKILL.md) — what our 100K+ winners and our flops did in the first 3 seconds, and the checklist every hook must pass.
+- [Humanizer](skills/humanizer/SKILL.md) — strip the AI tells from every script and caption before it goes out.
 - [Viral Hook Writer](skills/viral-hook-writer/SKILL.md) — ten ranked openings for the first three seconds.
 - [Reel Scripter](skills/reel-scripter/SKILL.md) — the winning hook turned into a full script in your voice.
 - [Reel Builder](skills/reel-builder/SKILL.md) — the whole reel, beat by beat.
