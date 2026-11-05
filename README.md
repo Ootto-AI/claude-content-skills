@@ -37,7 +37,7 @@ Claude "skills" that work like a whole content team in one install. The workflow
 
 ## The 30 Instagram skills
 
-The set referenced from [30 Claude skills to run your Instagram page](https://ootto.ai/blog/30-claude-skills-to-automate-your-instagram-content) — grouped by the job they do.
+The set referenced from [30 Claude skills to run your Instagram page](https://www.ootto.ai/blog/30-claude-skills-for-instagram) — grouped by the job they do.
 
 **Memory — Claude learns your brand (1)**
 
