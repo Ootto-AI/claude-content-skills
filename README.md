@@ -2,6 +2,8 @@
 
 **Free, copy-paste Claude skills that run your content growth factory** — turn ideas (and your Obsidian memory) into scroll-stopping Instagram reels: hooks, scripts, repurposing, captions, and a 2-week posting calendar.
 
+[![Connect to Ootto](https://img.shields.io/badge/Connect%20to%20Ootto-E8835C?style=for-the-badge)](https://ootto.ai)
+
 ![Claude Content Skills — by Ootto](assets/banner.png)
 
 [![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-Skill-F4640A)](https://claude.ai/claude-code)
