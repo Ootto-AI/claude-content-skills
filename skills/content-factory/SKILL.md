@@ -90,7 +90,9 @@ PIPELINE
 0.5) ai-brain: recall my voice + past winners (if connected).
 1) FIND+STUDY: use Apify to tear down the model URL (or your suggested pick) → hook, beats, pacing, visuals.
 2) viral-hook-writer: 10 hooks, ranked; I'll pick one (or you pick the strongest).
-3) reel-scripter: a 30–45s ORIGINAL script in MY voice on that structure (never a copy).
+3) Fill the boxes in the virality skill from MY real facts (who exactly, their pain, more pain, what others get wrong,
+   why me, real proof, what I do, the feeling, one action). Leave out a box with no real fact; never invent a number.
+   Then reel-scripter: a 30–45s ORIGINAL script in MY voice on that structure (never a copy).
 4) reel-builder + Remotion (+ Seedance via Runway): actually RENDER the reel → a real mp4 with the on-screen
    comment-CTA card. Show me the beat table + the rendered reel.
 5) caption-and-hashtags: caption + tiered hashtags + first comment, with my CTA keyword.
