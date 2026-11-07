@@ -27,18 +27,29 @@ drives the entire pipeline.
 > The individual skills each do one job. This one runs **all of them, in sequence**, and hands the
 > output of each step to the next.
 
+## The five pillars
+
+The people winning with Claude follow a system, and this skill is that system.
+Every reel goes through these five pillars, and the fifth is the most effective one.
+
+1. **Connect.** Connect Claude to your Instagram, so it works from your real numbers and can post for you.
+2. **Content research.** [content-research](../content-research/SKILL.md) finds what is going viral in your niche and shows you why it worked.
+3. **Hooks.** [viral-hook-writer](../viral-hook-writer/SKILL.md) writes 10 openings, and [virality](../virality/SKILL.md) ranks them against the checklist from our real winners and flops.
+4. **Humanizer.** [humanizer](../humanizer/SKILL.md) strips everything that sounds like AI, so the script is in your tone and your style.
+5. **Trial reels.** Post 5 hook versions as trial reels, so they go to people who don't follow you yet. Only the winner goes on your main page.
+
 ## The pipeline (what runs, in order)
 
 ```
 0. CONNECT     onboarding .......... one-time: connect the Apify MCP (teardown) + the Composio MCP→Instagram
                                       (post + DM), and make sure Remotion is available (render). Ask if missing.
 1. MEMORY      ai-brain ............. recall your voice + past winners (so it sounds like YOU)
-2. FIND+STUDY  Apify ............... tear a proven reel down frame-by-frame + transcript
-3. HOOK        viral-hook-writer .... 10 scroll-stopping hooks for the first 1–3s, ranked
-4. SCRIPT      reel-scripter ........ tight 30–45s ORIGINAL script — your words, the proven structure
+2. FIND+STUDY  content-research + Apify ... find what's going viral in your niche, tear the best one down frame-by-frame + transcript
+3. HOOK        viral-hook-writer + virality ... 10 scroll-stopping hooks for the first 1–3s, ranked against the checklist
+4. SCRIPT      reel-scripter + humanizer ... tight 30–45s ORIGINAL script, AI tells stripped, in your tone and style
 5. BUILD+RENDER reel-builder + Remotion (+ Seedance via Runway) ... the REAL rendered mp4
 6. CAPTION     caption-and-hashtags . caption + tiered hashtags + a first comment built for saves
-7. POST        Composio ............ actually publishes to your Instagram (after your OK)
+7. POST        ab-hook-tester + Composio ... 5 hook versions as trial reels (after your OK), the winner goes on your main page
 8. LEADS       Composio ............ keyword rule LIVE — every comment → public reply + DM, 24/7
 9. COMPOUND    ai-brain ............. save what worked back to memory → the next reel starts smarter
 ```
@@ -53,6 +64,8 @@ steps (3–6 script/hook/caption) are Claude; the execution steps use the underl
 - **Step 5** renders the real mp4 with **Remotion** (+ **Seedance via Runway** for acting beats) — see
   [reel-builder](../reel-builder/SKILL.md) for the render harness.
 - **Step 7** uses **Composio** to actually publish to the user's Instagram (pause for their OK first).
+  Trial reels go to people who don't follow the account yet.
+  Create the reel container with `trial_params: {"graduation_strategy": "MANUAL"}`, or switch on Trial in the Instagram app when sharing.
 - **Step 8** uses **Composio** to wire the comment→DM lead loop so it fires live, 24/7.
 
 If a tool isn't connected, do the creative pipeline (script + plan) and tell the user exactly what to
@@ -88,13 +101,13 @@ PIPELINE
    and confirm Remotion is available (render). IF ANY IS NOT CONNECTED, STOP AND ASK ME TO CONNECT IT — walk me
    through Apify, then Composio/Instagram — and wait; never search for or reuse a key. Only continue once connected.
 0.5) ai-brain: recall my voice + past winners (if connected).
-1) FIND+STUDY: use Apify to tear down the model URL (or your suggested pick) → hook, beats, pacing, visuals.
-2) viral-hook-writer: 10 hooks, ranked; I'll pick one (or you pick the strongest).
-3) reel-scripter: a 30–45s ORIGINAL script in MY voice on that structure (never a copy).
+1) content-research: find what's going viral in my niche and show me why. Then use Apify to tear down the model URL (or your suggested pick) → hook, beats, pacing, visuals.
+2) viral-hook-writer + virality: 10 hooks, ranked against the virality checklist; I'll pick the top 5 to test (or you pick).
+3) reel-scripter + humanizer: a 30–45s ORIGINAL script in MY voice on that structure (never a copy), then strip every AI tell so it is in my tone and my style.
 4) reel-builder + Remotion (+ Seedance via Runway): actually RENDER the reel → a real mp4 with the on-screen
    comment-CTA card. Show me the beat table + the rendered reel.
 5) caption-and-hashtags: caption + tiered hashtags + first comment, with my CTA keyword.
-6) POST: pause for my OK, then Composio actually publishes to my IG. If I say wait, just stage it.
+6) POST: pause for my OK, then post 5 versions with different hooks as trial reels through Composio. After 72 hours, pull views, watch time, shares and saves, name the winner, and put only the winner on my main page. If I say wait, just stage it.
 7) Composio + comment-responder: wire the CTA keyword LIVE so every comment → public reply + DM, 24/7.
 8) ai-brain: save the winning hook/format back to memory.
 
