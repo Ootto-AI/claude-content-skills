@@ -131,6 +131,59 @@ Rotate between:
 - **Pain first:** "Business owners: you're losing leads in your DMs every night."
 - **Something breaks:** "Claude just broke Instagram." The thing on screen literally breaks.
 
+## Fill the boxes before you write the script
+
+Before you write a script or an idea, fill these nine boxes for THIS brand, in this order.
+A viewer stays when the reel is plainly about them, says what hurts in the words they use, and shows why this business is the answer.
+Every box comes from this customer's own real facts: their site, their words, their posts, their comments, their numbers.
+**A box with no real fact is left out, never invented.** The reel is still made from the boxes that are left.
+This is know-how: nothing checks it and nothing is refused for it.
+
+The filled-in column is one made-up mobile dog groomer, to show what a filled box looks like, never words to reuse.
+
+| Box | What goes in it | Filled in |
+|---|---|---|
+| 1 Who exactly | The exact place and person, so they think "this is me" | "Dog owners in [their town] whose dog hates the salon" |
+| 2 Their pain | The problem they have today, in their own words | "Your dog shakes the whole drive there" |
+| 3 More pain | What that problem costs them next | "Then hours in a cage, and your morning is gone" |
+| 4 What others get wrong | What this business truly does differently, without naming a rival or knocking the category | "Most places book several dogs at once and keep them waiting" |
+| 5 Why you | Where they are from, who they are, why them | "I'm [their name], born and raised in [their town]" |
+| 6 Real proof | One true result, and whose it is | "[their real count] five-star reviews on our Google page" |
+| 7 What you do | The work, plainly, what they actually sell | "The van comes to your driveway, one dog at a time" |
+| 8 The feeling | What life feels like after | "You keep your morning, and your dog stops fearing the bath" |
+| 9 One action | One step, for one real thing they will get | "Comment BATH and I'll send this week's open slots" |
+
+The boxes are what you know, not the order of the first line.
+The hook still follows Rule 1 and its own proven reel; box 1 and the gain from box 8 go in its words.
+Then pour them into the script: boxes 2 and 3 the lead, boxes 4 and 5 the first body, box 7 the next, box 6 the strongest one, box 9 the ending.
+
+**Proof is the box people fake.** Only the customer's own real numbers, or a real result with its source, said as whose it is.
+Another business's result is said as that business's claim, by name, and never as the customer's or Ootto's.
+A number must show what the line says it shows: a new business does not lead with a big sales figure unless that figure is true and they would repeat it to a customer's face.
+No number is fine: their reviews, a before and after, a job they can show.
+
+### Three reels the boxes make
+
+**The ad.** The owner speaks the boxes straight to the buyer, over their own work.
+The person is on screen at the start, once in the middle and at the end; everything between is their footage, photos and graphics matching the line.
+They film it, or their own AI double says it, only when they approved that double themselves. Never anyone else's face or voice.
+
+**The breakdown** ("why this worked"). One real ad, reel or job of THEIRS plays full screen, the presenter reacts in a small circle over it, big bold words land on the footage, a small caption strip runs under them, and a beat or two breaks the rhythm.
+It walks through what each line did and why, then shows the real result and whose it is, then one comment word.
+It needs a real result of theirs (their own posts' numbers, what they told you); without one, make the ad instead.
+Their own footage or licensed footage only: another creator's video is never in it, and neither is a cartoon or film still used as a joke. Learn the format, not their video.
+It suits anyone who sells know-how, and a business showing how it won its own customers.
+
+**The numbered system.** How this business really works, as a short numbered list of jobs or steps ("the steps my clinic takes", not only anything to do with AI).
+The whole list shows first with the current step lit, on one clean screen, the presenter small in a corner with one word beside them.
+Each step says what it does, then shows one piece of THEIR real proof on screen: a ranked list, a before and after, a chart of their own numbers, a real message that changed how they work.
+A step with no real proof shows the step without a number. The boxes still feed it: box 1 and the gain open it, and the end says what is left for the viewer to do, then one comment word.
+The look follows the customer's picked style when they have one.
+
+These are selling reels: judge them by replies, bookings and sales, not by views, and we have no proof yet that the breakdown or the numbered system reaches strangers.
+So about one in five ideas is one of these, when real proof exists; the rest of a slate stays on proven viral reels.
+When the customer's reel offers a chat or DM assistant, it says it is an assistant, never pretending to be a person.
+
 ## How to use this skill
 
 When the user asks for a reel, a hook, or a script:
@@ -138,7 +191,7 @@ When the user asks for a reel, a hook, or a script:
 1. Ask who it is for and what they should get. One sentence.
 2. Write **three** hooks. For each, describe frame 0 and every half second up to 3 seconds, and check all eight points of the checklist.
 3. Pick the strongest and say why, naming the winning pattern it uses.
-4. Write the script line by line. Next to every line, write what happens on screen. No line without a visual.
+4. Fill the boxes above, leaving out any with no real fact, then write the script line by line. Next to every line, write what happens on screen. No line without a visual.
 5. Write the comment keyword and the real thing the DM delivers.
 6. Write the caption: problem, solution, the steps, then the keyword.
 
@@ -153,6 +206,7 @@ When the user asks why a post flopped:
 
 ```
 WHO IT'S FOR: ...
+BOXES: who / pain / more pain / others get wrong / why you / proof (whose) / what you do / feeling / one action
 HOOK (0-3s):
   0.0s  [what is on screen, already moving, recognisable]
   0.5s  [first spoken word] ...
